@@ -37,4 +37,3 @@ wd_climate_date_correct <- function(start, end){
   return(time_periods[lb:ub,])  
 }
 
-is.matrix(wd_climate_date_correct(1920,1939))
