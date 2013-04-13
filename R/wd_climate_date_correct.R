@@ -4,6 +4,9 @@
 #'@param start The start year
 #'@param end The end year
 #'@return a 2xM matrix where M in the number of periods in the data api
+#'@examples \dontrun {
+#'wd_climate_date_correct(1921,1957)
+#'}
 
 wd_climate_date_correct <- function(start, end){
   #basic error handling of user input
@@ -14,8 +17,12 @@ wd_climate_date_correct <- function(start, end){
     stop("Please input dates as numbers not strings")
   }
   
-  if(start < 1920){ start <- 1920}
-  if(end > 2099){end <- 2099}
+  #Handle constraints
+  if(start <= 1920){ start <- 1920}
+  if(start > 2080){start <- 2080}
+  
+  if(end >= 2099){end <- 2099}
+  if(end < 1939){end <- 1939}
   
   #2 matrices just for clarities sake
   past <- matrix(c(1920,1939,1940,1959,1960,1979,1980,1999),nrow=4,ncol=2,byrow=T)
