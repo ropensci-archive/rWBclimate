@@ -20,6 +20,7 @@ wd_climate_date_correct <- function(start, end){
   #Handle constraints
   if(start <= 1920){ start <- 1920}
   if(start > 2080){start <- 2080}
+  if(start > 1999 && start < 2020 ) {start <- 2020}
   
   if(end >= 2099){end <- 2099}
   if(end < 1939){end <- 1939}
