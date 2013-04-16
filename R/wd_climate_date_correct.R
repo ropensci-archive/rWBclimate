@@ -41,6 +41,8 @@ wd_climate_date_correct <- function(start, end){
   } else {
     ub <- tail(which(time_periods[,2] <= end),n=1) + 1
   }  
-  return(time_periods[lb:ub,])  
+  time_out <- time_periods[lb:ub,]
+  if(length(time_out) == 2){time_out <- t(as.matrix(time_out))}
+  return(time_out)  
 }
 
