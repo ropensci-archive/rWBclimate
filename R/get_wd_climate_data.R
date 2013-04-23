@@ -15,7 +15,7 @@ get_wd_climate_data <- function(locator,geo_type,type, cvar, start, end){
   
   ### Error handling
   if(geo_type == "country"){
-    check_ISO_code(country)
+    rWBclimate:::check_ISO_code(country)
   }
  
   if(geo_type == "basin"){
