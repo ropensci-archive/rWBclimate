@@ -32,7 +32,7 @@ basin_precip <- function(ID,type, start, end){
     stop("Please enter a valid data type to retrieve, see help for details")
   }
   
-  if(start > 2000 || type%in%typevec[3:4]){
+  if(start < 2000 && type%in%typevec[3:4]){
     stop("Anomaly requests are only valid for future scenarios")
   }
   
