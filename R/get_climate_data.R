@@ -6,16 +6,16 @@
 #' @param type the type of data you want "mavg" for monthly averages, "annualavg"
 #' @param cvar The variable you're interested in. "pr" for precipitation, "tas" for temperature in celcius.
 #' @param start The starting year you want data for, can be in the past or the future. Must conform to the periods outlined in the world bank API.  If given values don't conform to dates, the fuction will automatically round them.
-#' @param end The ending year you want data for, can be in the past or the future.  Similar to the start date, dates will be rounded to the nearest end dat.
-#' 
+#' @param end The ending year you want data for, can be in the past or the future.  Similar to the start date, dates will be rounded to the nearest end dat.  
+#' @export
 #' 
 
-get_wd_climate_data <- function(locator,geo_type,type, cvar, start, end){
+get_climate_data <- function(locator,geo_type,type, cvar, start, end){
   base_url <- "http://climatedataapi.worldbank.org/climateweb/rest/v1/"
   
   ### Error handling
   if(geo_type == "country"){
-    rWBclimate:::check_ISO_code(country)
+    check_ISO_code(country)
   }
  
   if(geo_type == "basin"){
@@ -28,9 +28,6 @@ get_wd_climate_data <- function(locator,geo_type,type, cvar, start, end){
       
     
   }
-  
-  
-
   
   data_url <- paste(geo_type,type,cvar,start,end,locator,sep="/")
   extension <- ".json"

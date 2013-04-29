@@ -7,8 +7,9 @@
 #'@examples \dontrun {
 #'wd_climate_date_correct(1921,1957)
 #'}
+#'@export
 
-wd_climate_date_correct <- function(start, end){
+date_correct <- function(start, end){
   #basic error handling of user input
   if(length(start) > 1 || length(end) > 1){
     stop("Please input a single start and end date")
