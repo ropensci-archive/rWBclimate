@@ -14,7 +14,6 @@ check_ISO_code <- function(iso){
   if(exists(as.character(substitute(codes)))==TRUE){ NULL } else
     { data(codes); message("loaded codes") }
   
-  codes <- as.vector(codes[,1])
   if(nchar(iso) != 3 && is.character(iso)){stop("Please enter a valid 3 letter country code")}
   if(is.numeric(iso)){stop("Please enter a 3 letter code, not a number")}
   if(!toupper(iso)%in%codes){stop("You have entered an invalid 3 letter country code, please refer to http://unstats.un.org/unsd/methods/m49/m49alpha.htm for a valid list")}

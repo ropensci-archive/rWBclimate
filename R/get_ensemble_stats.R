@@ -1,19 +1,6 @@
 #' Download ensemble statistics. Statistics can be from either two time periods:
 #'  2046 - 2065 and 2081 - 2100. Derived statistics can be any of the following:
-#'  tmin_means | Average daily minimum  temperature | degrees Celsius
-#' tmax_means | Average daily maximum temperature | degrees Celsius
-#' tmax_days90th | Number of days with maximum temperature above the control period’s 90th percentile (hot days) | days
-#' tmin_days90th| Number of days with minimum  temperature above the control period’s 90th percentile (warm nights) |days
-#' tmax_days10th | Number of days with maximum temperature below the control period’s 10th percentile (cool days) |days
-#' tmin_days10th |Number of days with minimum  temperature below the control period’s 10th percentile (cold nights) | days
-#' tmin_days0 | Number of days with minimum  temperature below 0 degrees Celsius | days
-#' ppt_days | Number of days with precipitation greater than 0.2 mm | days
-#' ppt_days2 | Number of days with precipitation greater than 2 mm | days
-#' ppt_days10 | Number of days with precipitation greater than 10 mm | days
-#' ppt_days90th | Number of days with precipitation greater than the control period's 90th percentile | days
-#' ppt_dryspell | Average number of days between precipitation events | days
-#' ppt_means | Average daily precipitation | mm
-#' 
+#'  #'\tabular{ccc}{\tab tmin_means \tab Average daily minimum  temperature \tab degrees Celsius \cr tmax_means \tab Average daily maximum temperature \tab degrees Celsius \cr tmax_days90th \tab Number of days with maximum temperature above the control period’s 90th percentile (hot days) \tab days \cr tmin_days90th\tab Number of days with minimum  temperature above the control period’s 90th percentile (warm nights) \tab days \cr tmax_days10th \tab Number of days with maximum temperature below the control period’s 10th percentile (cool days) \tab days \cr tmin_days10th \tabNumber of days with minimum  temperature below the control period’s 10th percentile (cold nights) \tab days \cr tmin_days0 \tab Number of days with minimum  temperature below 0 degrees Celsius \tab days \cr ppt_days \tab Number of days with precipitation greater than 0.2 mm \tab days \cr ppt_days2 \tab Number of days with precipitation greater than 2 mm \tab days \cr ppt_days10 \tab Number of days with precipitation greater than 10 mm \tab days \cr ppt_days90th \tab Number of days with precipitation greater than the control period's 90th percentile \tab days \cr ppt_dryspell \tab Average number of days between precipitation events \tab days \cr ppt_means \tab Average daily precipitation \tab mm \cr }
 #' @import plyr
 #' @param locator The ISO3 country code that you want data about. (http://unstats.un.org/unsd/methods/m49/m49alpha.htm) or the basin ID [1-468]
 #' @param stat The statistics of interest, must be one of the ones listed above.
@@ -42,18 +29,11 @@ get_ensemble_stats <- function(locator,type,stat){
   }
   
   
+  #Convert numeric basin numbers to strings if they were entered incorrectly
+  locator <- as.character(locator)
   
   ## Error handling for location input
-  
-  locator_check <- suppressWarnings( sum(is.na(as.numeric(locator))))
-  if( locator_check == 0){
-    geo_ref <- "basin"
-  } else
-    if(locator_check == length(locator)){
-      geo_ref <- "country"
-    } else {
-      stop("You must enter either basin ID numbers or country codes, but not a mixed vector of both")
-    }
+  geo_ref <- check_locator(locator)
   
 
   ### Set dates to retrieve both future scenarios.

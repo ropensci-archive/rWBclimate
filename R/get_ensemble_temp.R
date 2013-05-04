@@ -40,15 +40,9 @@ get_ensemble_temp <- function(locator,type, start, end){
   if(start < 2000 && type%in%typevec[3:4]){
     stop("Anomaly requests are only valid for future scenarios")
   }
-  locator_check <- suppressWarnings( sum(is.na(as.numeric(locator))))
-  if( locator_check == 0){
-    geo_ref <- "basin"
-  } else
-    if(locator_check == length(locator)){
-      geo_ref <- "country"
-    } else {
-      stop("You must enter either basin ID numbers or country codes, but not a mixed vector of both")
-    }
+  #Convert numeric basin numbers to strings if they were entered incorrectly
+  locator <- as.character(locator)
+  geo_ref <- check_locator(locator)
   
   output <- get_ensemble_data_recursive(locator,geo_ref,type, "tas", start, end)
   return(output)
