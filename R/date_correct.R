@@ -5,7 +5,7 @@
 #'@param end The end year
 #'@return a 2xM matrix where M in the number of periods in the data api
 #'@examples \dontrun {
-#'wd_climate_date_correct(1921,1957)
+#'date_correct(1921,1957)
 #'}
 #'@export
 

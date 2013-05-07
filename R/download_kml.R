@@ -4,7 +4,7 @@
 #' @param locator The a vector of ISO3 country code's that you want data about. (http://unstats.un.org/unsd/methods/m49/m49alpha.htm) or the basin ID's [1-468] (http://data.worldbank.org/sites/default/files/climate_data_api_basins.pdf)
 #' @param resolution The optional simplification value is a decimal value between 0 and 1 that specifies boundary resolution; 0 (the default) is the highest available resolution while 1 is the lowest. This option lets you request simpler and thus smaller boundaries at the expense of resolution. A value of 0.01 reduces output and complexity by roughly 50%; values above 0.05 begin to lose too much detail.
 #' @details kml files can be quite large making downloading them every time you want to make a map time consuming.  To 
-#' reduce this time it's easiest to download kml files and store them.  To set the directory use a line like this: \code{options(kmlpath="~/kmltemp")}  The option must be called "kmlpath".
+#' reduce this time it's easiest to download kml files and store them.  To set the directory use a line like this: \code{options(kmlpath="/Users/emh/kmltemp")}  The option must be called "kmlpath".
 #' 
 #' @export
 
@@ -20,6 +20,7 @@ download_kml <- function(locator, resolution = 0){
   #Convert numeric basin numbers to strings if they were entered incorrectly
   resolution <- as.character(resolution)
   locator <- as.character(locator)
+  locator <- toupper(locator)
   geo_ref <- check_locator(locator)
   
   #check which kml are already downloaded

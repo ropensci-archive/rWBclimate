@@ -12,16 +12,21 @@ Description: A package to download and interface with World Bank climate data
 Depends:
     ggplot2,
     httr,
-    plyr
-Suggests:
-    testthat
+    plyr,
+    rgdal
 Collate:
-    'basin_precip.R'
-    'basin_temp.R'
     'check_ISO_code.R'
-    'country_precip.R'
-    'country_temp.R'
-    'get_wd_climate_data.R'
-    'get_wd_data_recursive.R'
     'rWBclimate-package.r'
-    'wd_climate_date_correct.R'
+    'check_locator.R'
+    'create_map_df.R'
+    'date_correct.R'
+    'download_kml.R'
+    'get_climate_data.R'
+    'get_data_recursive.R'
+    'get_ensemble_climate_data.R'
+    'get_ensemble_data_recursive.R'
+    'get_ensemble_precip.R'
+    'get_ensemble_stats.R'
+    'get_ensemble_temp.R'
+    'get_model_precip.R'
+    'get_model_temp.R'
