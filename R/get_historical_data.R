@@ -9,10 +9,13 @@
 #' The historical period for country is 1901 - 2009, and 1960 - 2009 for basin 
 #' @param cvar The climate variable you're interested in. "\emph{pr}" for precipitation, "\emph{tas}" for temperature in celcius.
 #' @param time_scale The time scale you want to return values on.  Must be "\emph{month}", "\emph{year}" or "\emph{decade}"
-#' 
+#' @return a dataframe with historical climate data 
 #' @details The time_scale parameter returns a different number of variables depending on the input timescale. \emph{Month} will return 12 values, a historical average for that month across all years.  \emph{Year} will return yearly averages for each year, and \emph{decade} will return decade averages.
 #' 
-#' @return a dataframe with historical climate data 
+#' 
+#' @examples \dontrun{
+#' 
+#' }
 #' @export
 #' 
 get_historical_data <- function(locator,cvar,time_scale){
@@ -57,5 +60,8 @@ if(time_scale == "month"){
   data_out$month <- c("Jan","Feb","Mar","April","May","June","July","Aug","Sep","Oct","Nov","Dec")
   
 }
+
+data_out$locator <- rep(locator,dim(data_out)[1])
+
 return(data_out)
 }
