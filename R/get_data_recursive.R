@@ -1,4 +1,6 @@
-#'Function to recursively call the get_climate_data().  Handles a vector of basins
+#'wratpper for get_climate_data()
+#'
+#'@description Function to recursively call the get_climate_data().  Handles a vector of basins
 #'or countries as well as multiple dates.
 #'
 #' @import plyr
@@ -24,6 +26,14 @@ get_data_recursive <- function(locator,geo_type,type, cvar, start, end){
       counter <- counter + 1
     }
   }
-  return(ldply(data_out,data.frame))
+  
+  dat_out <-ldply(data_out,data.frame)
+  
+  if(grepl("ann",type)){
+    to_rep <- "annualData"
+  } else { to_rep <- "monthVals"}
+  colnames(dat_out)[which(colnames(dat_out)==to_rep)] <- "data"
+  
+  return(dat_out)
   
 }

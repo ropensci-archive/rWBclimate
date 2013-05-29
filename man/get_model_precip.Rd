@@ -1,7 +1,6 @@
 \name{get_model_precip}
 \alias{get_model_precip}
-\title{Function wraps get_climate_data() and returns precipitation
-by basin or country in mm as output from all 15 models, for the a1 and b2 scenarios.}
+\title{Download GCM precipitation data}
 \usage{
   get_model_precip(locator, type, start, end)
 }

@@ -1,4 +1,6 @@
-#' Downloads map data from in kml format and writes it to a temporary directory.  You must specify a temporary directory to write files to in your options.  
+#'Download kml files
+#'
+#'@description Downloads map data from in kml format and writes it to a temporary directory.  You must specify a temporary directory to write files to in your options.  
 #' 
 #' @import httr
 #' @param locator The a vector of ISO3 country code's that you want data about. (http://unstats.un.org/unsd/methods/m49/m49alpha.htm) or the basin ID's [1-468] (http://data.worldbank.org/sites/default/files/climate_data_api_basins.pdf)

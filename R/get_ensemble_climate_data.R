@@ -1,4 +1,6 @@
-#' Download ensemble data for all models, returns the 10th, 50th and 90th percentile
+#' Download ensemble climate data
+#' 
+#' @description Download ensemble data for all models, returns the 10th, 50th and 90th percentile
 #' of all models (15 for A1, 13 for B2).  Ensemble requets can be for countries
 #' or basins.
 #' 

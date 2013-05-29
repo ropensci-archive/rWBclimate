@@ -1,4 +1,5 @@
-#'Function wraps get_climate_data() and returns precipitation
+#'Download GCM precipitation data
+#'@description Function wraps get_climate_data() and returns precipitation
 #'by basin or country in mm as output from all 15 models, for the a1 and b2 scenarios. 
 #'
 #'@param locator A vector of either watershed basin ID's from http://data.worldbank.org/sites/default/files/climate_data_api_basins.pdf

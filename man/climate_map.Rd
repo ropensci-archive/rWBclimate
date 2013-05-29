@@ -1,8 +1,8 @@
-\name{get_model_temp}
-\alias{get_model_temp}
-\title{Download GCM temperature data}
+\name{climate_map}
+\alias{climate_map}
+\title{Map climate data}
 \usage{
-  get_model_temp(locator, type, start, end)
+  climate_map(map_df, data_df, map = 1)
 }
 \arguments{
   \item{locator}{A vector of either watershed basin ID's
@@ -25,9 +25,9 @@
   all scenarios, gcms, for each time period.
 }
 \description{
-  Function wraps get_climate_data() and returns temperature
-  by basin or country in degrees C as output from all 15
-  models, for the a1 and b2 scenarios.
+  Create maps of climate data.  It requires two data
+  inputs, a map dataframe, and a climate dataframe.  The
+  climate data
 }
 \details{
   start and end year can be any years, but all years will
@@ -44,13 +44,13 @@
 temp_dat <- get_model_temp(c("2","231"),"annualavg",1900,3000)
 temp_dat <- subset(temp_dat,temp_dat$gcm=="ukmo_hadcm3")
 temp_dat <- subset(temp_dat,temp_dat$scenario!="b1")
-ggplot(temp_dat,aes(x=fromYear,y=data,group=locator,colour=locator))+geom_path()
+ggplot(temp_dat,aes(x=fromYear,y=annualData,group=locator,colour=locator))+geom_path()
 
 ### Get data for 4 countries with monthly tempitation values
 temp_dat <- get_model_temp(c("USA","BRA","CAN","YEM"),"mavg",2020,2030)
 temp_dat <- subset(temp_dat,temp_dat$gcm=="ukmo_hadcm3")
 temp_dat <- subset(temp_dat,temp_dat$scenario!="b1")
-ggplot(temp_dat,aes(x=as.factor(month),y=data,group=locator,colour=locator))+geom_path()
+ggplot(temp_dat,aes(x=as.factor(month),y=monthVals,group=locator,colour=locator))+geom_path()
 }
 }
 

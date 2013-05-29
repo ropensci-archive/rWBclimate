@@ -1,6 +1,6 @@
 \name{check_ISO_code}
 \alias{check_ISO_code}
-\title{Checks if the country code entered is a valid country code that data exists for}
+\title{check country codes}
 \usage{
   check_ISO_code(iso)
 }

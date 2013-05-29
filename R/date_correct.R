@@ -1,10 +1,11 @@
-#'Round start and end dates to conform with data api standards.  See api documentation (http://data.worldbank.org/developers/climate-data-api)
+#'correct data values
+#'@description Round start and end dates to conform with data api standards.  See api documentation (http://data.worldbank.org/developers/climate-data-api)
 #'for full details
 #'
 #'@param start The start year
 #'@param end The end year
 #'@return a 2xM matrix where M in the number of periods in the data api
-#'@examples \dontrun {
+#'@examples \dontrun{
 #'date_correct(1921,1957)
 #'}
 #'@export

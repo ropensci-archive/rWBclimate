@@ -1,6 +1,6 @@
 \name{create_map_df}
 \alias{create_map_df}
-\title{A function that will download maps for a vector of basins or country codes and return a data frame that has the kml output processed such that it can be plotted with ggplot2 and other mapping functions:}
+\title{Create mapable dataframe}
 \usage{
   create_map_df(locator, resolution = 0)
 }
@@ -37,9 +37,9 @@
   until you delete them.
 }
 \examples{
-\dontrun {
-to_map <- create_map_dif(c("USA","MEX","CAN"))
-> ggplot(to_map, aes(x=long, y=lat,group=group))+ geom_polygon()
+\dontrun{
+to_map <- create_map_df(c("USA","MEX","CAN"))
+ggplot(to_map, aes(x=long, y=lat,group=group))+ geom_polygon()
 }
 }
 

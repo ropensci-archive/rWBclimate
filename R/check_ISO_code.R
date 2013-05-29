@@ -1,4 +1,5 @@
-#'Checks if the country code entered is a valid country code that data exists for
+#'check country codes
+#'@description Checks if the country code entered is a valid country code that data exists for
 #'
 #'@param iso The 3 letter country code based on ISO3 Country abbreviations (http://unstats.un.org/unsd/methods/m49/m49alpha.htm)
 #'@return TRUE if a valid code, otherwise an error is returned

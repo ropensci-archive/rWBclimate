@@ -1,8 +1,6 @@
 \name{get_ensemble_temp}
 \alias{get_ensemble_temp}
-\title{Function wraps get_ensemble_climate_data() and returns precipitation
-by basin or country in mm.  Output is the 10th 50th and 90th percentile for all
-gcm's for the a1 and b2 scenarios.}
+\title{Download ensemble temperature data}
 \usage{
   get_ensemble_temp(locator, type, start, end)
 }

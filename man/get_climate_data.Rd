@@ -1,6 +1,6 @@
 \name{get_climate_data}
 \alias{get_climate_data}
-\title{Download monthly average climate data from the world bank climate data}
+\title{Download climate data}
 \usage{
   get_climate_data(locator, geo_type, type, cvar, start,
     end)
@@ -32,6 +32,7 @@
 }
 \description{
   Download monthly average climate data from the world bank
-  climate data
+  climate data api. Ideally you'll want to use the wrapper
+  functions that call this.
 }
 

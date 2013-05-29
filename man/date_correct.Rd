@@ -1,7 +1,6 @@
 \name{date_correct}
 \alias{date_correct}
-\title{Round start and end dates to conform with data api standards.  See api documentation (http://data.worldbank.org/developers/climate-data-api)
-for full details}
+\title{correct data values}
 \usage{
   date_correct(start, end)
 }
@@ -21,7 +20,7 @@ for full details}
   for full details
 }
 \examples{
-\dontrun {
+\dontrun{
 date_correct(1921,1957)
 }
 }

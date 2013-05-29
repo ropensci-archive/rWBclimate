@@ -30,3 +30,4 @@ Collate:
     'get_ensemble_temp.R'
     'get_model_precip.R'
     'get_model_temp.R'
+    'climate_map.R'

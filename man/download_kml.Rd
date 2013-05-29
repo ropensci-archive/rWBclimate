@@ -1,6 +1,6 @@
 \name{download_kml}
 \alias{download_kml}
-\title{Downloads map data from in kml format and writes it to a temporary directory.  You must specify a temporary directory to write files to in your options.}
+\title{Download kml files}
 \usage{
   download_kml(locator, resolution = 0)
 }

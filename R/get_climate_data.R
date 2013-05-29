@@ -1,4 +1,7 @@
-#' Download monthly average climate data from the world bank climate data
+#'Download climate data
+#'
+#'@description Download monthly average climate data from the world bank climate 
+#'             data api. Ideally you'll want to use the wrapper functions that call this.
 #' 
 #' @import httr plyr
 #' @param locator The ISO3 country code that you want data about. (http://unstats.un.org/unsd/methods/m49/m49alpha.htm) or the basin ID [1-468]

@@ -1,7 +1,6 @@
 \name{get_data_recursive}
 \alias{get_data_recursive}
-\title{Function to recursively call the get_climate_data().  Handles a vector of basins
-or countries as well as multiple dates.}
+\title{wratpper for get_climate_data()}
 \usage{
   get_data_recursive(locator, geo_type, type, cvar, start,
     end)

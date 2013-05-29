@@ -1,7 +1,6 @@
 \name{get_ensemble_data_recursive}
 \alias{get_ensemble_data_recursive}
-\title{Function to recursively call the get_ensemble_climate_data().  Handles a vector of basins
-or countries as well as multiple dates.}
+\title{Wrapper for get_ensemble_climate_data()}
 \usage{
   get_ensemble_data_recursive(locator, geo_type, type,
     cvar, start, end)

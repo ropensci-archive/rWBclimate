@@ -1,6 +1,6 @@
-#'Download GCM temperature data
-#'@description Function wraps get_climate_data() and returns temperature
-#'by basin or country in degrees C as output from all 15 models, for the a1 and b2 scenarios. 
+#'Map climate data
+#'@description Create maps of climate data.  It requires two data inputs, a 
+#'map dataframe, and a climate dataframe.  The climate data 
 #'
 #'@param locator A vector of either watershed basin ID's from http://data.worldbank.org/sites/default/files/climate_data_api_basins.pdf
 #'       It can be just a single basin id, or a vector of ids.  ids should be strings.
@@ -20,30 +20,34 @@
 #' temp_dat <- get_model_temp(c("2","231"),"annualavg",1900,3000)
 #' temp_dat <- subset(temp_dat,temp_dat$gcm=="ukmo_hadcm3")
 #' temp_dat <- subset(temp_dat,temp_dat$scenario!="b1")
-#' ggplot(temp_dat,aes(x=fromYear,y=data,group=locator,colour=locator))+geom_path()
+#' ggplot(temp_dat,aes(x=fromYear,y=annualData,group=locator,colour=locator))+geom_path()
 #' 
 #' ### Get data for 4 countries with monthly tempitation values
 #' temp_dat <- get_model_temp(c("USA","BRA","CAN","YEM"),"mavg",2020,2030)
 #' temp_dat <- subset(temp_dat,temp_dat$gcm=="ukmo_hadcm3")
 #' temp_dat <- subset(temp_dat,temp_dat$scenario!="b1")
-#' ggplot(temp_dat,aes(x=as.factor(month),y=data,group=locator,colour=locator))+geom_path()
+#' ggplot(temp_dat,aes(x=as.factor(month),y=monthVals,group=locator,colour=locator))+geom_path()
 #'}
 #'@export
 
-get_model_temp <- function(locator,type, start, end){
-  ### check type is valid
-  typevec <- c("mavg","annualavg","manom","annualanom")
-  if(!type%in%typevec){
-    stop("Please enter a valid data type to retrieve, see help for details")
+climate_map <- function(map_df, data_df,map = 1){
+  ### You can't plot more that one piece of data on a map
+  ### so we need to check that there's not more data than regions to plot
+  if(length(unique(map_df$ID)) != dim(data_df)[1]){
+    stop("You can't have more than one piece fo data for each region to map")
+  }
+  ## Order data for easy matching
+  data_df <- data_df[order(data_df$locator),]
+  map_df <- map_df[order(map_df$ID),]
+  
+  ids <- unique(map_df$ID)
+  data_vec <- vector()
+  for(i in 1:length(ids)){
+    data_vec <- c(data_vec,rep(data_df$data[i],sum(map_df$ID==ids[i])))
   }
   
-  if(start < 2000 && type%in%typevec[3:4]){
-    stop("Anomaly requests are only valid for future scenarios")
-  }
-  #Convert numeric basin numbers to strings if they were entered incorrectly
-  locator <- as.character(locator)
-  geo_ref <- check_locator(locator)
-  
-  output <- get_data_recursive(locator,geo_ref,type, "tas", start, end)
-  return(output)
+  map_df$data <- data_vec
+  map <- ggplot(map_df, aes(x=long, y=lat,group=group,fill=as.factor(data)))+ geom_polygon()
+  if(map == 1){return(map)
+  } else {return(map_df)}
 }
