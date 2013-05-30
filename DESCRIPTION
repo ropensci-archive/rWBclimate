@@ -31,3 +31,7 @@ Collate:
     'get_model_precip.R'
     'get_model_temp.R'
     'climate_map.R'
+    'get_historical_data_recursive.R'
+    'get_historical_data.R'
+    'get_historical_precip.R'
+    'get_historical_temp.R'

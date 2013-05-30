@@ -17,7 +17,7 @@
 #' 
 #' }
 #' @export
-#' 
+
 get_historical_data <- function(locator,cvar,time_scale){
 base_url <- "http://climatedataapi.worldbank.org/climateweb/rest/v1/"
 
@@ -34,11 +34,11 @@ if(!time_scale%in%time_vec){
 }
 #Convert numeric basin numbers to strings if they were entered incorrectly
 locator <- as.character(locator)
-geo_ref <- check_locator(locator)
+geo_type <- check_locator(locator)
 
 ### Error handling
 if(geo_type == "country"){
-  check_ISO_code(country)
+  check_ISO_code(locator)
 }
 
 if(geo_type == "basin"){
@@ -57,7 +57,8 @@ parsed_data <- content(GET(full_url),as="parsed")
 data_out <- ldply(parsed_data,data.frame)
 
 if(time_scale == "month"){
-  data_out$month <- c("Jan","Feb","Mar","April","May","June","July","Aug","Sep","Oct","Nov","Dec")
+  m <- c("Jan","Feb","Mar","April","May","June","July","Aug","Sep","Oct","Nov","Dec")
+  data_out$month <- factor(m,levels=m)
   
 }
 

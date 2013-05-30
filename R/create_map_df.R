@@ -7,8 +7,8 @@
 #' @details kml files can be quite large (100k-600k per country) making downloading them every time you want to make a map time consuming.  To 
 #' reduce this time it's easiest to download kml files and store them.  To set the directory use a line like this: \code{options(kmlpath="/Users/emh/kmltemp")}  The option must be called "kmlpath".  These files will be persistent until you delete them.
 #'@examples \dontrun{
-#'to_map <- create_map_df(c("USA","MEX","CAN"))
-#'ggplot(to_map, aes(x=long, y=lat,group=group))+ geom_polygon()
+#' to_map <- create_map_df(c("USA","MEX","CAN"))
+#' ggplot(to_map, aes(x=long, y=lat,group=group))+ geom_polygon()
 #'}
 #' 
 #' @export
