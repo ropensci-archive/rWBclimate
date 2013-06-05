@@ -68,7 +68,7 @@ get_ensemble_stats <- function(locator,type,stat){
   ## Standardize dataframe name for data of interest
   
   if(grepl("ann",type)){
-    to_rep <- "annualData"
+    to_rep <- "annualVal"
   } else { to_rep <- "monthVals"}
   colnames(dat_out)[which(colnames(dat_out)==to_rep)] <- "data"
   

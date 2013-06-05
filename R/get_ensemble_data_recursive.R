@@ -29,7 +29,7 @@ get_ensemble_data_recursive <- function(locator,geo_type,type, cvar, start, end)
   
   dat_out <- ldply(data_out,data.frame)
   if(grepl("ann",type)){
-    to_rep <- "annualData"
+    to_rep <- "annualVal"
   } else { to_rep <- "monthVals"}
   colnames(dat_out)[which(colnames(dat_out)==to_rep)] <- "data"
   
