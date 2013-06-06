@@ -10,7 +10,7 @@
 #' 
 #' @export
 
-download_kml <- function(locator, resolution = 0){
+download_kml <- function(locator, resolution = .007){
   if(is.null(getOption("kmlpath"))){stop("You must first set the kmlpath parameter in options, see help for details.")}
   #get vector of file names.
   my_path <- getOption("kmlpath")
