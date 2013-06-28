@@ -31,7 +31,14 @@ create_map_df <- function(locator,resolution = .007){
   df_out <- list()
   
   for(i in 1:length(locator)){
-    my_layer <- ogrListLayers(paste(my_path,to_plot[i],".kml",sep=""))
+    fName <- paste(my_path,to_plot[i],".kml",sep="")
+    fSize <- file.info(fName)$size
+    ### Throw an error if your file is too small
+    if(fSize < 200){
+      stop(paste("A map file for ", to_plot[i], "contains no data, please set the resolution parameter closer to 0 or remove it from your list of maps to download"))
+    }
+    
+    my_layer <- ogrListLayers(fName)
     kml_tmp <- readOGR(paste(my_path,to_plot[i],".kml",sep=""),layer=my_layer[1])
     kml_f <- fortify(kml_tmp)
     kml_f$group <- paste(kml_f$group,to_plot[i],sep="-")
