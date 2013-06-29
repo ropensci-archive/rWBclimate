@@ -100,25 +100,35 @@ get_model_precip()
 *Example 1: Plotting monthly data from different GCM's* 
 Say you want to compare temperature from two different models in the USA to see how they vary.  You can download data for the USA and then subset it to the specific models you're interested in and then plot them.
 
-```{r loadlib, echo=FALSE,warning=FALSE,message=FALSE,results='hide'}
-library(ggplot2)
-library(rWBclimate)
+
+
+
+
+```r
+usa.dat <- get_model_temp("USA", "mavg", 2080, 2100)
+usa.dat.bcc <- usa.dat[usa.dat$gcm == "bccr_bcm2_0", ]
+usa.dat.had <- usa.dat[usa.dat$gcm == "ukmo_hadcm3", ]
+## Add a unique ID to each for easier plotting
+usa.dat.bcc$ID <- paste(usa.dat.bcc$scenario, usa.dat.bcc$gcm, sep = "-")
+usa.dat.had$ID <- paste(usa.dat.had$scenario, usa.dat.had$gcm, sep = "-")
+plot.df <- rbind(usa.dat.bcc, usa.dat.had)
+ggplot(plot.df, aes(x = as.factor(month), y = data, group = ID, colour = gcm, 
+    linetype = scenario)) + geom_point() + geom_path() + ylab("Average temperature in degrees C \n between 2080 and 2100") + 
+    xlab("Month") + theme_bw()
 ```
 
-```{r getmodeldata,message=FALSE}
-usa.dat <- get_model_temp("USA","mavg",2080,2100)
-usa.dat.bcc <- usa.dat[usa.dat$gcm == "bccr_bcm2_0", ]
-usa.dat.had <- usa.dat[usa.dat$gcm=="ukmo_hadcm3",]
-## Add a unique ID to each for easier plotting
-usa.dat.bcc$ID <- paste(usa.dat.bcc$scenario,usa.dat.bcc$gcm,sep="-")
-usa.dat.had$ID <- paste(usa.dat.had$scenario,usa.dat.had$gcm,sep="-")
-plot.df <- rbind(usa.dat.bcc,usa.dat.had)
-ggplot(plot.df,aes(x=as.factor(month),y=data,group=ID,colour=gcm,linetype=scenario))+geom_point()+geom_path()+ylab("Average temperature in degrees C \n between 2080 and 2100") + xlab("Month")+theme_bw()
-```
+![plot of chunk getmodeldata](figure/getmodeldata.png) 
+
 
 Subsetting all the data can be a bit tedious.  You could also compare all the models but just for one scenario, the A2
 
-```{r plotallmodeldata}
-ggplot(usa.dat[usa.dat$scenario=="a2",],aes(x=month,y=data,group=gcm,colour=gcm))+geom_point()+geom_path()+ylab("Average temperature in degrees C \n between 2080 and 2100") + xlab("Month")+theme_bw()
+
+```r
+ggplot(usa.dat[usa.dat$scenario == "a2", ], aes(x = month, y = data, 
+    group = gcm, colour = gcm)) + geom_point() + geom_path() + ylab("Average temperature in degrees C \n between 2080 and 2100") + 
+    xlab("Month") + theme_bw()
 ```
+
+![plot of chunk plotallmodeldata](figure/plotallmodeldata.png) 
+
 
