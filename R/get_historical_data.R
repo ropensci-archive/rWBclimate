@@ -53,7 +53,10 @@ if(geo_type == "basin"){
 data_url <- paste(geo_type,"cru",cvar,time_scale,locator,sep="/")
 extension <- ".json"
 full_url <- paste(base_url,data_url,extension,sep="")
-parsed_data <- content(GET(full_url),as="parsed")
+parsed_data <- try(content(GET(full_url),as="parsed"),silent=T)
+if(sum(grep("unexpected",parsed_data)) > 0){
+  stop(paste("You entered a country for which there is no data. ",locator," is not a country with any data"))
+}
 data_out <- ldply(parsed_data,data.frame)
 
 if(time_scale == "month"){
