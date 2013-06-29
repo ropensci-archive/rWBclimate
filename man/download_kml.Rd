@@ -2,7 +2,7 @@
 \alias{download_kml}
 \title{Download kml files}
 \usage{
-  download_kml(locator, resolution = 0)
+  download_kml(locator, resolution = 0.007)
 }
 \arguments{
   \item{locator}{The a vector of ISO3 country code's that

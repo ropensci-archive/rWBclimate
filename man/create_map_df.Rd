@@ -2,7 +2,7 @@
 \alias{create_map_df}
 \title{Create mapable dataframe}
 \usage{
-  create_map_df(locator, resolution = 0)
+  create_map_df(locator, resolution = 0.007)
 }
 \arguments{
   \item{locator}{The a vector of ISO3 country code's that
@@ -18,7 +18,9 @@
   request simpler and thus smaller boundaries at the
   expense of resolution. A value of 0.01 reduces output and
   complexity by roughly 50%; values above 0.05 begin to
-  lose too much detail.}
+  lose too much detail. Also values above 0.5 also tend to
+  be empty for small basin regions throwing an error when
+  loding KML data.}
 }
 \description{
   A function that will download maps for a vector of basins
@@ -39,7 +41,6 @@
 \examples{
 \dontrun{
 to_map <- create_map_df(c("USA","MEX","CAN"))
-ggplot(to_map, aes(x=long, y=lat,group=group))+ geom_polygon()
 }
 }
 

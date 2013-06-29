@@ -2,7 +2,7 @@
 \alias{climate_map}
 \title{Map climate data}
 \usage{
-  climate_map(map_df, data_df, map = 1)
+  climate_map(map_df, data_df, return_map = TRUE)
 }
 \arguments{
   \item{locator}{A vector of either watershed basin ID's

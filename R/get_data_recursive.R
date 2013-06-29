@@ -16,6 +16,7 @@
 #'@export
 
 
+
 get_data_recursive <- function(locator,geo_type,type, cvar, start, end){
   dates <- date_correct(start,end)
   data_out <- list()
