@@ -11,7 +11,7 @@
 #' @param start The starting year you want data for, can be in the past or the future. Must conform to the periods outlined in the world bank API.  If given values don't conform to dates, the fuction will automatically round them.
 #' @param end The ending year you want data for, can be in the past or the future.  Similar to the start date, dates will be rounded to the nearest end dat.
 #' @examples \dontrun{
-#'  get_wd_data_recursive(c("1","2"),"basin","mavg","pr",1920,1940)
+#'  get_ensemble_data_recursive(c("1","2"),"basin","mavg","pr",1920,1940)
 #'}
 #'@export
 

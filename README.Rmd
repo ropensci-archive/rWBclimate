@@ -1,4 +1,5 @@
-`rWBclimate` Introduction 
+`rWBclimate` 
+Introduction 
 ========================================================
 rWBclimate is an R interface for the World Bank climate data used in the World Bank [climate knowledge portal](http://sdwebx.worldbank.org/climateportal/index.cfm).  
 
@@ -97,9 +98,61 @@ plot.df <- rbind(usa.dat.bcc,usa.dat.had)
 ggplot(plot.df,aes(x=as.factor(month),y=data,group=ID,colour=gcm,linetype=scenario))+geom_point()+geom_path()+ylab("Average temperature in degrees C \n between 2080 and 2100") + xlab("Month")+theme_bw()
 ```
 
-Subsetting all the data can be a bit tedious.  You could also compare all the models but just for one scenario, the A2
+Subsetting all the data can be a bit tedious.  You could also compare all the models but just for one scenario, the A2.
 
 ```{r plotallmodeldata}
 ggplot(usa.dat[usa.dat$scenario=="a2",],aes(x=month,y=data,group=gcm,colour=gcm))+geom_point()+geom_path()+ylab("Average temperature in degrees C \n between 2080 and 2100") + xlab("Month")+theme_bw()
 ```
 
+*Example 2: Plotting annual data for different countries*
+
+Data can be extracted from countries or basins submitted as vectors. Here we will plot the expected temperature anomaly for each 20 year period over a baseline control period of 1961-2000.  These countries chosen span the north to south pole.  It's clear from the plot that the northern most countries (US and Canada) have the biggest anomaly, and Belize, the most equatorial country, has the smallest anomaly.
+```{r annualdata}
+country.list <- c("CAN","USA","MEX","BLZ","COL","PER","BOL","ARG")
+country.dat <- get_model_temp(country.list,"annualanom",2010,2100)
+#Subset data
+country.dat.bcc <- country.dat[country.dat$gcm == "bccr_bcm2_0", ]
+##Exclude A2 scenario
+country.dat.bcc <- subset(country.dat.bcc,country.dat.bcc$scenario != "a2")
+ggplot(country.dat.bcc,aes(x=fromYear,y=data,group=locator,colour=locator))+geom_point()+geom_path()+ylab("Temperature anomaly over baseline")+theme_bw()
+```
+
+
+**_Downloading Ensemble Model Data_**
+
+Getting raw model data is really useful for comparing scenarios or different GCM's.  However many users might be more interested in aggregated measurements. If so you can download ensemble climate data.  This will give access to all 15 GCM's combined and queries will return the 10th, 50th and 90th quantiles for the ensemble of all GCM's.  All queries are constructed the same as raw model data above with the same data types, spatial scales and time scales.
+
+*Example 1: Comparing model quantiles*
+
+Let's look at monthly precipitation predictions for Indonesia for the period of 2080-2100.  We'll create a plot of the precipitation expected in the future for the two different scenarios and plot them with different colours and dashed lines to indicate quantiles.
+
+```{r comparing quantiles}
+idn.dat <- get_ensemble_precip("IDN","mavg",2080,2100)
+#Set line types
+ltype <- rep(1,dim(idn.dat)[1])
+ltype[idn.dat$percentile != 50] <- 2 
+idn.dat$ltype <- ltype
+#Create uniqueIDs
+idn.dat$uid <- paste(idn.dat$scenario,idn.dat$percentile,sep="-")
+ggplot(idn.dat,aes(x=as.factor(month),y=data,group=uid,colour=scenario,linetype=as.factor(ltype)))+geom_point()+geom_path()+xlab("Month")+ylab("Rain in mm")
+```
+
+*Example 2: Ensemble statistics*
+
+You can also download 13 different ensemble statistics about basins or countries aside from the raw data as above.  Below is a full table of available statistics.
+
+|Parameter name|Description|Units|
+|---------------|-------|-------|
+|*tmin_means*|Average daily minimum temperature|degrees Celsius|
+|*tmax_means*|Average daily maximum temperature|degrees Celsius|
+|*tmax_days90th*|Number of days with maximum temperature above \n the control period’s 90th percentile (hot days)|days|
+|*tmin_days90th*|Number of days with minimum  temperature above \n the control period’s 90th percentile (warm nights)|days|
+|*tmax_days10th*|Number of days with maximum temperature below \n the control period’s 10th percentile (cool days)|days|
+|*tmin_days10th*|Number of days with minimum  temperature below \n the control period’s 10th percentile (cold nights)|days|
+|*tmin_days0*|Number of days with minimum  temperature below \n 0 degrees Celsius|days|
+|*ppt_days*|Number of days with precipitation greater than 0.2 mm|days|
+|*ppt_days2*|Number of days with precipitation greater than 2 mm|days|
+|*ppt_days10*|Number of days with precipitation greater than 10 mm|days|
+|*ppt_days90th*|Number of days with precipitation greater \n than the control period's 90th percentile|days|
+|*ppt_dryspell*|Average number of days between precipitation events|days|
+|*ppt_means*|Average daily precipitation|mm|
