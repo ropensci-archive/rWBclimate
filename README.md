@@ -161,20 +161,64 @@ ggplot(idn.dat, aes(x = as.factor(month), y = data, group = uid, colour = scenar
 
 *Example 2: Ensemble statistics*
 
-You can also download 13 different ensemble statistics about basins or countries aside from the raw data as above.  Below is a full table of available statistics.
+You can also download 13 different ensemble statistics about basins or countries aside from the raw data as above.  These derived statistics are often given relative to a control period, 1961-2000.  The time periods however are only for 2046-2065, or 2081-2100, not the standard 20 year intervals available for raw model data.  Below is a full table of available statistics.
 
 |Parameter name|Description|Units|
 |---------------|-------|-------|
 |*tmin_means*|Average daily minimum temperature|degrees Celsius|
 |*tmax_means*|Average daily maximum temperature|degrees Celsius|
-|*tmax_days90th*|Number of days with maximum temperature above \n the control period’s 90th percentile (hot days)|days|
-|*tmin_days90th*|Number of days with minimum  temperature above \n the control period’s 90th percentile (warm nights)|days|
-|*tmax_days10th*|Number of days with maximum temperature below \n the control period’s 10th percentile (cool days)|days|
-|*tmin_days10th*|Number of days with minimum  temperature below \n the control period’s 10th percentile (cold nights)|days|
-|*tmin_days0*|Number of days with minimum  temperature below \n 0 degrees Celsius|days|
+|*tmax_days90th*|Number of days with maximum temperature above the control period’s 90th percentile (hot days)|days|
+|*tmin_days90th*|Number of days with minimum  temperature above the control period’s 90th percentile (warm nights)|days|
+|*tmax_days10th*|Number of days with maximum temperature below the control period’s 10th percentile (cool days)|days|
+|*tmin_days10th*|Number of days with minimum  temperature below the control period’s 10th percentile (cold nights)|days|
+|*tmin_days0*|Number of days with minimum  temperature below 0 degrees Celsius|days|
 |*ppt_days*|Number of days with precipitation greater than 0.2 mm|days|
 |*ppt_days2*|Number of days with precipitation greater than 2 mm|days|
 |*ppt_days10*|Number of days with precipitation greater than 10 mm|days|
-|*ppt_days90th*|Number of days with precipitation greater \n than the control period's 90th percentile|days|
+|*ppt_days90th*|Number of days with precipitation greater than the control period's 90th percentile|days|
 |*ppt_dryspell*|Average number of days between precipitation events|days|
 |*ppt_means*|Average daily precipitation|mm|
+
+Similar to our previous example where we looked at temperature anomaly along a latitudinal gradient, we can examine more complex ensemble statistics.  Here we examine the average minimum daily temperature in Scavavadian countries.  Also given that only two time periods are available, there is no need to enter in a specific year range
+
+```r
+country.list <- c("ISL", "FIN", "NOR", "SWE")
+country.dat <- get_ensemble_stats(country.list, "mavg", "tmin_means")
+####### Subset data Exclude A2 scenario
+country.dat.b1 <- subset(country.dat, country.dat$scenario == "b1")
+# choose just one percentile
+country.dat.b1 <- subset(country.dat.b1, country.dat.b1$percentile == 50)
+# get just one year period
+country.dat.b1 <- subset(country.dat.b1, country.dat.b1$fromYear == 2081)
+
+
+ggplot(country.dat.b1, aes(x = month, y = data, group = locator, colour = locator)) + 
+    geom_point() + geom_path() + ylab("Average daily minimum temperature") + 
+    theme_bw() + xlab("Month")
+```
+
+![plot of chunk enesmble data](figure/enesmble data.png) 
+
+
+
+**_Downloading Historical Data_**
+
+It is possible to extract historical data from GCM queries, but this is acutally model backcasting output, not true historical records.  The climate data api can download data at the same spatial scales as all other requests (country or basin), but the time scale differs. You can download data at monthly, yearly or decadanal time scales.  Monthly data is actually the mean monthly temperature or precipitation value for each month from 1901-2009 for countries, or 1960-2009 for basins.  You can indicate the type of data you want in the call by setting the `time_scale` parameter to *month*,*year* or *decade*.
+
+*Example 1: Downloading monthly data*
+
+You can download historical precipitation for Belize, Colombia, Peru and Bolivia.  
+
+
+
+```r
+country.list <- c("BLZ", "COL", "PER", "BOL")
+country.dat <- get_historical_precip(country.list, "month")
+
+ggplot(country.dat, aes(x = month, y = data, group = locator, colour = locator)) + 
+    geom_point() + geom_path() + ylab("Average historical precipitation (mm)") + 
+    theme_bw() + xlab("Month")
+```
+
+![plot of chunk historicalmonth](figure/historicalmonth.png) 
+
