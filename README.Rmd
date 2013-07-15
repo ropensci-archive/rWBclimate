@@ -183,7 +183,7 @@ It is possible to extract historical data from GCM queries, but this is acutally
 You can download historical precipitation for Belize, Colombia, Peru and Bolivia.  
 
 
-```{r annualdata}
+```{r historicalmonth}
 country.list <- c("BLZ","COL","PER","BOL")
 country.dat <- get_historical_precip(country.list,"month")
 
