@@ -134,7 +134,7 @@ ltype[idn.dat$percentile != 50] <- 2
 idn.dat$ltype <- ltype
 #Create uniqueIDs
 idn.dat$uid <- paste(idn.dat$scenario,idn.dat$percentile,sep="-")
-ggplot(idn.dat,aes(x=as.factor(month),y=data,group=uid,colour=scenario,linetype=as.factor(ltype)))+geom_point()+geom_path()+xlab("Month")+ylab("Rain in mm")
+ggplot(idn.dat,aes(x=as.factor(month),y=data,group=uid,colour=scenario,linetype=as.factor(ltype)))+geom_point()+geom_path()+xlab("Month")+ylab("Rain in mm")+theme_bw()
 ```
 
 *Example 2: Ensemble statistics*
@@ -190,3 +190,36 @@ country.dat <- get_historical_precip(country.list,"month")
 ggplot(country.dat,aes(x=month,y=data,group=locator,colour=locator))+geom_point()+geom_path()+ylab("Average historical precipitation (mm)")+theme_bw()+xlab("Month")
 
 ```
+
+*Example 2: Downloading annual data*
+
+Another use of historical data is to look at increases in temperature over time.
+```{r historicalyear}
+country.list <- c("USA","MEX","CAN","BLZ")
+country.dat <- get_historical_temp(country.list,"year")
+
+ggplot(country.dat,aes(x=year,y=data,group=locator))+geom_point()+geom_path()+ylab("Average annual temperature of Canada")+theme_bw()+xlab("Year")+stat_smooth(se=F,colour="black")+facet_wrap(~locator,scale="free")
+
+```
+
+**_Mapping climate Data_**
+
+Data can be mapped in [ggplot2](http://docs.ggplot2.org/current/) by downloading KML files from the climate database, creating dataframes and plotting using ggplot2. Maps are available at the basin or country spatial scale.  Because KML files can be large files are downloaded and locally cached in a directory you must set using the kmlpath option.  You can set to any directory as follows: `options(kmlpath = <yourpath>)`.  KML files will be stored there and only downloaded again if they aren't found locally.  If you wish to get rid of them, you will need to manually delete them.  `rWBclimate` allows you to download maps and plot them as ggplot maps, or it can automatically create maps of climate data.  For your convenience we've created basin and country vectors for all six continents *(Antartica has no data in the database)*.  These data files are automatically loaded with the package and can be accessed for basins as *NoAm_basin*, *SoAm_basin*,*Asia_basin*,*Eur_basin*,*Africa_basin*,and *Oceana_basin*. Countries can be similarly accessed as *NoAm_country*, *SoAm_country*,*Asia_country*,*Eur_country*,*Africa_country*,and *Oceana_country*.  If you are plotting by continent, it can take some time to first download all the KML files.
+
+*Example 1: Creating map dataframe and plotting*
+
+Creating map data frames is straightforward, simply provide a list of valid country codes to the function `create_map_df`
+```{r map_plot,fig.width=3, fig.height=6}
+#Set the kmlpath option
+options(kmlpath = "/Users/edmundhart/kmltemp")
+##Here we use a list basins for Africa
+af_basin <- create_map_df(Africa_basin)
+ggplot(af_basin, aes(x=long, y=lat,group=group))+ geom_polygon() + theme_bw()
+```
+
+*Example 2: Mapping climate data*
+
+
+
+
+
