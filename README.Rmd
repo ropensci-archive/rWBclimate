@@ -209,14 +209,20 @@ Data can be mapped in [ggplot2](http://docs.ggplot2.org/current/) by downloading
 *Example 1: Creating map dataframe and plotting*
 
 Creating map data frames is straightforward, simply provide a list of valid country codes to the function `create_map_df`
-```{r map_plot,fig.width=5.5, fig.height=7,message=FALSE}
+```{r map_plot,fig.width=5.5, fig.height=7,echo=FALSE,warning=FALSE,message=FALSE}
 #Set the kmlpath option
 options(kmlpath = "/Users/edmundhart/kmltemp")
 ##Here we use a list basins for Africa
 af_basin <- create_map_df(Africa_basin)
 ggplot(af_basin, aes(x=long, y=lat,group=group))+ geom_polygon() + theme_bw()
 ```
-
+```{r map_plot code, eval=FALSE}
+#Set the kmlpath option
+options(kmlpath = "/Users/edmundhart/kmltemp")
+##Here we use a list basins for Africa
+af_basin <- create_map_df(Africa_basin)
+ggplot(af_basin, aes(x=long, y=lat,group=group))+ geom_polygon() + theme_bw()
+```
 *Example 2: Mapping climate data*
 
 In order to map climate data you need to have a single point of data for each spatial polygon(country or basin) in your map dataframe.  We've already created the Africa basin map dataframe, so now you need to get some data for each basin.  
@@ -240,7 +246,7 @@ af_map + scale_fill_continuous("Temperature \n anomaly",low="yellow",high = "red
 
 *Example 3: Creating a temperature map of the world*
 
-```{r worldmap,fig.width=7, fig.height=5.5,message=FALSE}
+```{r worldmap,fig.width=7, fig.height=5.5,echo=FALSE,warning=FALSE,message=FALSE}
 options(kmlpath = "/Users/edmundhart/kmltemp")
 ### Combine all country vectors
 
@@ -254,6 +260,20 @@ world_dat <- subset(world_dat,world_dat$percentile == 50)
 world_map <- climate_map(world_map_df,world_dat,return_map = T)
 world_map + scale_fill_continuous("Temperature \n at 2100",low="yellow",high = "red") + theme_bw()
 
+```
+```{r worldmap code, eval = FALSE}
+options(kmlpath = "/Users/edmundhart/kmltemp")
+### Combine all country vectors
+
+world <- c(NoAm_country,SoAm_country,Eur_country,Asia_country,Africa_country,Oceana_country)
+world_map_df <- create_map_df(world)
+world_dat <- get_ensemble_temp(world,"annualavg",2080,2100)
+  ##  Subset data to just one scenario, and one percentile
+world_dat <- subset(world_dat,world_dat$scenario == "a2")
+world_dat <- subset(world_dat,world_dat$percentile == 50)
+
+world_map <- climate_map(world_map_df,world_dat,return_map = T)
+world_map + scale_fill_continuous("Temperature \n at 2100",low="yellow",high = "red") + theme_bw()
 ```
 
 

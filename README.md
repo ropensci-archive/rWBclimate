@@ -268,13 +268,6 @@ Data can be mapped in [ggplot2](http://docs.ggplot2.org/current/) by downloading
 
 Creating map data frames is straightforward, simply provide a list of valid country codes to the function `create_map_df`
 
-```r
-# Set the kmlpath option
-options(kmlpath = "/Users/edmundhart/kmltemp")
-## Here we use a list basins for Africa
-af_basin <- create_map_df(Africa_basin)
-```
-
 ```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/379.kml", layer: "Layer #0"
@@ -905,12 +898,16 @@ af_basin <- create_map_df(Africa_basin)
 ## Feature type: wkbMultiPolygon with 2 dimensions
 ```
 
-```r
-ggplot(af_basin, aes(x = long, y = lat, group = group)) + geom_polygon() + theme_bw()
-```
-
 ![plot of chunk map_plot](figure/map_plot.png) 
 
+
+```r
+# Set the kmlpath option
+options(kmlpath = "/Users/edmundhart/kmltemp")
+## Here we use a list basins for Africa
+af_basin <- create_map_df(Africa_basin)
+ggplot(af_basin, aes(x = long, y = lat, group = group)) + geom_polygon() + theme_bw()
+```
 
 *Example 2: Mapping climate data*
 
@@ -941,15 +938,6 @@ af_map + scale_fill_continuous("Temperature \n anomaly", low = "yellow", high = 
 
 *Example 3: Creating a temperature map of the world*
 
-
-```r
-options(kmlpath = "/Users/edmundhart/kmltemp")
-### Combine all country vectors
-
-world <- c(NoAm_country, SoAm_country, Eur_country, Asia_country, Africa_country, 
-    Oceana_country)
-world_map_df <- create_map_df(world)
-```
 
 ```
 ## OGR data source with driver: KML 
@@ -2603,7 +2591,16 @@ world_map_df <- create_map_df(world)
 ## Feature type: wkbMultiPolygon with 2 dimensions
 ```
 
+![plot of chunk worldmap](figure/worldmap.png) 
+
+
 ```r
+options(kmlpath = "/Users/edmundhart/kmltemp")
+### Combine all country vectors
+
+world <- c(NoAm_country, SoAm_country, Eur_country, Asia_country, Africa_country, 
+    Oceana_country)
+world_map_df <- create_map_df(world)
 world_dat <- get_ensemble_temp(world, "annualavg", 2080, 2100)
 ## Subset data to just one scenario, and one percentile
 world_dat <- subset(world_dat, world_dat$scenario == "a2")
@@ -2613,8 +2610,6 @@ world_map <- climate_map(world_map_df, world_dat, return_map = T)
 world_map + scale_fill_continuous("Temperature \n at 2100", low = "yellow", 
     high = "red") + theme_bw()
 ```
-
-![plot of chunk worldmap](figure/worldmap.png) 
 
 
 
