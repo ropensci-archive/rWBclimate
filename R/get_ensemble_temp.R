@@ -1,5 +1,4 @@
 #'Download ensemble temperature data
-#'
 #'@description Function wraps get_ensemble_climate_data() and returns precipitation
 #'by basin or country in mm.  Output is the 10th 50th and 90th percentile for all 
 #'gcm's for the a1 and b2 scenarios. 
@@ -12,6 +11,7 @@
 #'@param start the start year to gather data for.
 #'@param end the end year to gather data to.
 #'@return a dataframe with precipitation predictions in mm for all scenarios, gcms, for each time period.
+#'
 #'@details start and end year can be any years, but all years will be coerced
 #'         into periods outlined by the API (http://data.worldbank.org/developers/climate  -data-api)
 #'         anomaly periods are only valid for future scenarios and based on a 
@@ -49,3 +49,4 @@ get_ensemble_temp <- function(locator,type, start, end){
   output <- get_ensemble_data_recursive(locator,geo_ref,type, "tas", start, end)
   return(output)
 }
+

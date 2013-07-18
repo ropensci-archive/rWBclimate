@@ -37,7 +37,7 @@
 }
 \examples{
 \dontrun{
- get_wd_data_recursive(c("1","2"),"basin","mavg","pr",1920,1940)
+ get_ensemble_data_recursive(c("1","2"),"basin","mavg","pr",1920,1940)
 }
 }
 

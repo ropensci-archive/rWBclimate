@@ -283,18 +283,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/380.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -305,18 +297,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/382.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -327,18 +311,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/384.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -349,18 +325,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/386.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -371,18 +339,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/388.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -393,18 +353,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/390.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -415,18 +367,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/392.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -437,18 +381,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/394.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -459,18 +395,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/396.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -481,18 +409,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/398.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -503,18 +423,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/400.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -525,18 +437,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/402.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -547,18 +451,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/404.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -569,18 +465,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/406.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -591,18 +479,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/408.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -613,18 +493,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/410.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -635,18 +507,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/412.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -657,18 +521,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/414.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -679,18 +535,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/416.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -701,18 +549,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/418.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -723,18 +563,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/420.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -745,18 +577,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/422.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -767,18 +591,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/424.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -789,18 +605,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/426.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -811,18 +619,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/428.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -833,18 +633,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/430.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -855,18 +647,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/432.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -877,18 +661,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/434.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -899,18 +675,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/436.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -921,18 +689,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/438.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -943,18 +703,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/440.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -965,18 +717,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/442.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -987,18 +731,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/444.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -1009,18 +745,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/446.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -1031,18 +759,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/448.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -1053,18 +773,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/450.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -1075,18 +787,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/452.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -1097,18 +801,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/454.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -1119,18 +815,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/456.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -1141,18 +829,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/458.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -1163,18 +843,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/460.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -1185,18 +857,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/462.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -1207,18 +871,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/464.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -1229,18 +885,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/466.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```
@@ -1251,18 +899,10 @@ af_basin <- create_map_df(Africa_basin)
 ```
 
 ```
-## Regions defined for each Polygons
-```
-
-```
 ## OGR data source with driver: KML 
 ## Source: "/Users/edmundhart/kmltemp/468.kml", layer: "Layer #0"
 ## with 1 features and 2 fields
 ## Feature type: wkbMultiPolygon with 2 dimensions
-```
-
-```
-## Regions defined for each Polygons
 ```
 
 ```r
@@ -1274,6 +914,1707 @@ ggplot(af_basin, aes(x = long, y = lat, group = group)) + geom_polygon() + theme
 
 *Example 2: Mapping climate data*
 
+In order to map climate data you need to have a single point of data for each spatial polygon(country or basin) in your map dataframe.  We've already created the Africa basin map dataframe, so now you need to get some data for each basin.  
+
+
+```r
+af_basin_dat <- get_ensemble_temp(Africa_basin, "annualanom", 2080, 2100)
+## Subset data to just one scenario, and one percentile
+af_basin_dat <- subset(af_basin_dat, af_basin_dat$scenario == "a2")
+af_basin_dat <- subset(af_basin_dat, af_basin_dat$percentile == 50)
+```
+
+
+Now that we have both the map dataframe and the data we can bind them together with the function `climate_map()`.  The function has two options, it can return a `ggplot2` map or it can return a dataframe that you can plot easily with `ggplot2`.  This is useful because it means that you could bind together multiple dataframes for bigger plots, or perhaps add new data yourself
+
+
+```r
+
+af_map <- climate_map(af_basin, af_basin_dat, return_map = T)
+af_map + scale_fill_continuous("Temperature \n anomaly", low = "yellow", high = "red") + 
+    theme_bw()
+```
+
+![plot of chunk climatemap](figure/climatemap.png) 
+
+
+
+*Example 3: Creating a temperature map of the world*
+
+
+```r
+options(kmlpath = "/Users/edmundhart/kmltemp")
+### Combine all country vectors
+
+world <- c(NoAm_country, SoAm_country, Eur_country, Asia_country, Africa_country, 
+    Oceana_country)
+world_map_df <- create_map_df(world)
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/ABW.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/AFG.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/AGO.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/AIA.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/ALB.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/AND.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/ANT.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/ARE.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/ARG.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/ARM.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/ASM.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/ATG.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/AUS.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/AUT.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/AZE.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/BDI.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/BEL.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/BEN.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/BFA.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/BGD.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/BGR.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/BHR.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/BHS.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/BIH.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/BLR.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/BLZ.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/BMU.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/BOL.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/BRA.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/BRB.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/BRN.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/BTN.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/BWA.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/CAF.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/CAN.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/CCK.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/CHE.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/CHL.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/CHN.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/CIV.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/CMR.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/COD.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/COG.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/COK.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/COL.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/COM.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/CPV.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/CRI.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/CUB.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/CXR.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/CYM.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/CYP.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/CZE.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/DEU.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/DJI.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/DMA.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/DNK.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/DOM.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/DZA.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/ECU.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/EGY.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/ERI.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/ESH.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/ESP.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/EST.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/ETH.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/FIN.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/FJI.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/FLK.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/FRA.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/FRO.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/FSM.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/GAB.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/GBR.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/GEO.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/GGY.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/GHA.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/GIB.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/GIN.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/GLP.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/GMB.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/GNB.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/GNQ.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/GRC.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/GRD.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/GRL.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/GTM.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/GUF.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/GUM.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/GUY.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/HKG.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/HND.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/HRV.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/HTI.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/HUN.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/IDN.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/IMN.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/IND.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/IOT.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/IRL.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/IRN.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/IRQ.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/ISL.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/ISR.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/ITA.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/JAM.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/JEY.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/JOR.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/JPN.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/KAZ.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/KEN.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/KGZ.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/KHM.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/KIR.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/KNA.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/KOR.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/KWT.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/LAO.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/LBN.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/LBR.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/LBY.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/LCA.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/LIE.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/LKA.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/LSO.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/LTU.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/LUX.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/LVA.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/MAC.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/MAR.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/MCO.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/MDA.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/MDG.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/MDV.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/MEX.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/MHL.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/MKD.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/MLI.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/MLT.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/MMR.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/MNE.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/MNG.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/MNP.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/MOZ.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/MRT.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/MSR.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/MTQ.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/MUS.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/MWI.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/MYS.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/MYT.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/NAM.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/NCL.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/NER.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/NFK.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/NGA.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/NIC.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/NIU.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/NLD.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/NOR.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/NPL.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/NRU.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/NZL.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/OMN.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/PAK.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/PAN.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/PCN.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/PER.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/PHL.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/PLW.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/PNG.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/POL.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/PRI.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/PRK.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/PRT.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/PRY.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/PSE.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/PYF.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/QAT.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/REU.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/ROU.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/RUS.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/RWA.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/SAU.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/SDN.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/SEN.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/SGP.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/SHN.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/SJM.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/SLB.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/SLE.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/SLV.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/SMR.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/SOM.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/SRB.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/STP.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/SUR.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/SVK.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/SVN.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/SWE.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/SWZ.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/SYC.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/SYR.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/TCA.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/TCD.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/TGO.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/THA.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/TJK.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/TKL.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/TKM.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/TLS.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/TON.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/TTO.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/TUN.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/TUR.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/TUV.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/TWN.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/TZA.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/UGA.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/UKR.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/UMI.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/URY.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/USA.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/UZB.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/VCT.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/VEN.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/VGB.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/VIR.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/VNM.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/VUT.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/WLF.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/WSM.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/YEM.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/ZAF.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/ZMB.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```
+## OGR data source with driver: KML 
+## Source: "/Users/edmundhart/kmltemp/ZWE.kml", layer: "Layer #0"
+## with 1 features and 2 fields
+## Feature type: wkbMultiPolygon with 2 dimensions
+```
+
+```r
+world_dat <- get_ensemble_temp(world, "annualavg", 2080, 2100)
+## Subset data to just one scenario, and one percentile
+world_dat <- subset(world_dat, world_dat$scenario == "a2")
+world_dat <- subset(world_dat, world_dat$percentile == 50)
+
+world_map <- climate_map(world_map_df, world_dat, return_map = T)
+world_map + scale_fill_continuous("Temperature \n at 2100", low = "yellow", 
+    high = "red") + theme_bw()
+```
+
+![plot of chunk worldmap](figure/worldmap.png) 
 
 
 

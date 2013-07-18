@@ -20,3 +20,4 @@ check_ISO_code <- function(iso){
   if(!toupper(iso)%in%codes){stop("You have entered an invalid 3 letter country code, please refer to http://unstats.un.org/unsd/methods/m49/m49alpha.htm for a valid list")}
   return(TRUE)
 }
+
