@@ -6,6 +6,4 @@ rWBclimate.Rproj
 .DS_Store
 .Rapp.history
 README.html
-data/contmaps.R
-data/countryDB.csv
-data/isocodes.csv
+
