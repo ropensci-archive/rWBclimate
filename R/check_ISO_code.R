@@ -11,13 +11,10 @@
 
 
 check_ISO_code <- function(iso){
-  # codes <- read.csv("data/isocodes.csv",header=F)
-  if(exists(as.character(substitute(codes)))==TRUE){ NULL } else
-    { data(codes); message("loaded codes") }
-  
+codes <- c(NoAm_country,SoAm_country,Oceana_country,Africa_country,Asia_country,Eur_country)
   if(nchar(iso) != 3 && is.character(iso)){stop("Please enter a valid 3 letter country code")}
   if(is.numeric(iso)){stop("Please enter a 3 letter code, not a number")}
-  if(!toupper(iso)%in%codes){stop("You have entered an invalid 3 letter country code, please refer to http://unstats.un.org/unsd/methods/m49/m49alpha.htm for a valid list")}
+  if(!toupper(iso)%in%codes){stop(paste(iso,"is an invalid 3 letter country code, please refer to http://unstats.un.org/unsd/methods/m49/m49alpha.htm for a valid list",sep=" "))}
   return(TRUE)
 }
 
