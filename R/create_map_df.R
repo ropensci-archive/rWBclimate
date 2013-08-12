@@ -21,7 +21,7 @@ create_map_df <- function(locator,resolution = .007){
   download_kml(locator,resolution)
 
   
-  my_path <- getOption("kmlpath")
+  my_path <- path.expand(getOption("kmlpath"))
   last_char <- substr(my_path,nchar(my_path),nchar(my_path))
   if(last_char != "/"){my_path <- paste(my_path,"/",sep="")}
   #get vector of KML files in kml path and strip them of their extension
