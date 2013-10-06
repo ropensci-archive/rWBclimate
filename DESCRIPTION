@@ -2,7 +2,7 @@ Package: rWBclimate
 Maintainer: Edmund Hart <edmund.m.hart@gmail.com>
 Authors@R: c(person("Edmund", "Hart", role = c("aut", "cre"),
     email = "edmund.m.hart@gmail.com"))
-Version: 1.0.1
+Version: 1.0
 License: CC0
 URL: http://github.com/ropensci/rWBclimate
 BugReports: http://github.com/ropensci/rWBclimate/issues
