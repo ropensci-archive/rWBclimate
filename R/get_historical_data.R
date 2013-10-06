@@ -57,8 +57,8 @@ parsed_data <- try(content(GET(full_url),as="parsed"),silent=T)
 if(sum(grep("unexpected",parsed_data)) > 0){
   stop(paste("You entered a country for which there is no data. ",locator," is not a country with any data"))
 }
-# data_out <- ldply(parsed_data,data.frame)
-data_out <- data.frame(do.call(rbind, parsed_data))
+data_out <- ldply(parsed_data,data.frame)
+# data_out <- data.frame(do.call(rbind, parsed_data))
 
 if(time_scale == "month"){
   m <- c("Jan","Feb","Mar","April","May","June","July","Aug","Sep","Oct","Nov","Dec")
