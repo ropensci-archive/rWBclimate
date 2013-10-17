@@ -311,3 +311,5 @@ world_map + scale_fill_continuous("Temperature \n at 2100", low = "yellow",
 
 
 
+[![](http://ropensci.org/public_images/github_footer.png)](http://ropensci.org)
+
