@@ -1,4 +1,8 @@
-## `rWBclimate` 
+rWBclimate
+==========
+
+[![Build Status](https://api.travis-ci.org/ropensci/rWBclimate.png)](https://travis-ci.org/ropensci/rWBclimate)
+
 Introduction 
 ========================================================
 rWBclimate is an R interface for the World Bank climate data used in the World Bank [climate knowledge portal](http://sdwebx.worldbank.org/climateportal/index.cfm).  
