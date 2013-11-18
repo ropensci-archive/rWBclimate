@@ -256,6 +256,23 @@ world_map + scale_fill_continuous("Temperature \n at 2100",low="yellow",high = "
 
 ```
 
+To cite package ‘rWBclimate’ in publications use:
+
+```coffee
+
+  Edmund Hart (). rWBclimate: rWBclimate. R package version 1.0.
+  http://github.com/ropensci/rWBclimate
+
+A BibTeX entry for LaTeX users is
+
+  @Manual{,
+    title = {rWBclimate: rWBclimate},
+    author = {Edmund Hart},
+    note = {R package version 1.0},
+    url = {http://github.com/ropensci/rWBclimate},
+  }
+```
+
 
 [![](http://ropensci.org/public_images/github_footer.png)](http://ropensci.org)
 
