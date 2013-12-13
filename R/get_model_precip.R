@@ -42,9 +42,9 @@ get_model_precip <- function(locator,type, start, end){
   }
   #Convert numeric basin numbers to strings if they were entered incorrectly
   locator <- as.character(locator)
-  geo_ref <- check_locator(locator)
+  geo_ref <- rWBclimate:::check_locator(locator)
   
-  output <- get_data_recursive(locator,geo_ref,type, "pr", start, end)
+  output <- rWBclimate:::get_data_recursive(locator,geo_ref,type, "pr", start, end)
   return(output)
 }
 

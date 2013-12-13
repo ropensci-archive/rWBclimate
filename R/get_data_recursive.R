@@ -18,7 +18,7 @@
 
 
 get_data_recursive <- function(locator,geo_type,type, cvar, start, end){
-  dates <- date_correct(start,end)
+  dates <- rWBclimate:::date_correct(start,end)
   data_out <- list()
   counter <- 1
   for(i in 1:length(locator)){

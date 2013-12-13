@@ -7,7 +7,7 @@
 #'check_ISO_code("USA")
 #'}
 #'
-#'@export
+
 
 
 check_ISO_code <- function(iso){

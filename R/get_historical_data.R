@@ -16,7 +16,7 @@
 #' @examples \dontrun{
 #' 
 #' }
-#' @export
+
 
 get_historical_data <- function(locator,cvar,time_scale){
 base_url <- "http://climatedataapi.worldbank.org/climateweb/rest/v1/"
@@ -34,11 +34,11 @@ if(!time_scale%in%time_vec){
 }
 #Convert numeric basin numbers to strings if they were entered incorrectly
 locator <- as.character(locator)
-geo_type <- check_locator(locator)
+geo_type <- rWBclimate:::check_locator(locator)
 
 ### Error handling
 if(geo_type == "country"){
-  check_ISO_code(locator)
+  rWBclimate:::check_ISO_code(locator)
 }
 
 if(geo_type == "basin"){

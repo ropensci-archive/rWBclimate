@@ -11,7 +11,6 @@
 #' @param cvar The variable you're interested in. "pr" for precipitation, "tas" for temperature in celcius.
 #' @param start The starting year you want data for, can be in the past or the future. Must conform to the periods outlined in the world bank API.  If given values don't conform to dates, the fuction will automatically round them.
 #' @param end The ending year you want data for, can be in the past or the future.  Similar to the start date, dates will be rounded to the nearest end dat.
-#' @export
 
 
 get_ensemble_climate_data <- function(locator,geo_type,type, cvar, start, end){
@@ -19,7 +18,7 @@ get_ensemble_climate_data <- function(locator,geo_type,type, cvar, start, end){
   
   ### Error handling
   if(geo_type == "country"){
-    check_ISO_code(locator)
+    rWBclimate:::check_ISO_code(locator)
   }
   
   if(geo_type == "basin"){

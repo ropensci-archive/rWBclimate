@@ -23,5 +23,5 @@
 
 get_historical_temp <- function(locator,time_scale){
   cvar <- "tas"
-  return(get_historical_data_recursive(locator,cvar,time_scale))
+  return(rWBclimate:::get_historical_data_recursive(locator,cvar,time_scale))
 }

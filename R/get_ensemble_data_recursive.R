@@ -13,16 +13,16 @@
 #' @examples \dontrun{
 #'  get_ensemble_data_recursive(c("1","2"),"basin","mavg","pr",1920,1940)
 #'}
-#'@export
+
 
 
 get_ensemble_data_recursive <- function(locator,geo_type,type, cvar, start, end){
-  dates <- date_correct(start,end)
+  dates <- rWBclimate:::date_correct(start,end)
   data_out <- list()
   counter <- 1
   for(i in 1:length(locator)){
     for(j in 1:length(dates[,1])){
-      data_out[[counter]] <- get_ensemble_climate_data(locator[i],geo_type,type,cvar,dates[j,1],dates[j,2])
+      data_out[[counter]] <- rWBclimate:::get_ensemble_climate_data(locator[i],geo_type,type,cvar,dates[j,1],dates[j,2])
       counter <- counter + 1
     }
   }
