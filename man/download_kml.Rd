@@ -2,7 +2,7 @@
 \alias{download_kml}
 \title{Download kml files}
 \usage{
-  download_kml(locator, resolution = 0.007)
+download_kml(locator, resolution = 0.007)
 }
 \arguments{
   \item{locator}{The a vector of ISO3 country code's that
@@ -21,16 +21,16 @@
   lose too much detail.}
 }
 \description{
-  Downloads map data from in kml format and writes it to a
-  temporary directory.  You must specify a temporary
-  directory to write files to in your options.
+Downloads map data from in kml format and writes it to a
+temporary directory.  You must specify a temporary
+directory to write files to in your options.
 }
 \details{
-  kml files can be quite large making downloading them
-  every time you want to make a map time consuming.  To
-  reduce this time it's easiest to download kml files and
-  store them.  To set the directory use a line like this:
-  \code{options(kmlpath="/Users/emh/kmltemp")} The option
-  must be called "kmlpath".
+kml files can be quite large making downloading them every
+time you want to make a map time consuming.  To reduce this
+time it's easiest to download kml files and store them.  To
+set the directory use a line like this:
+\code{options(kmlpath="/Users/emh/kmltemp")} The option
+must be called "kmlpath".
 }
 

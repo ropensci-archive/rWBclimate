@@ -11,13 +11,6 @@
 #' @param time_scale The time scale you want to return values on.  Must be "\emph{month}", "\emph{year}" or "\emph{decade}"
 #' @return a dataframe with historical climate data 
 #' @details The time_scale parameter returns a different number of variables depending on the input timescale. \emph{Month} will return 12 values, a historical average for that month across all years.  \emph{Year} will return yearly averages for each year, and \emph{decade} will return decade averages.
-#' 
-#' 
-#' @examples \dontrun{
-#' 
-#' }
-
-
 get_historical_data <- function(locator,cvar,time_scale){
 base_url <- "http://climatedataapi.worldbank.org/climateweb/rest/v1/"
 
