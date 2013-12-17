@@ -1,3 +1,4 @@
+#' get_climate_data
 #'
 #'@description Download monthly average climate data from the world bank climate 
 #'             data api. Ideally you'll want to use the wrapper functions that call this.

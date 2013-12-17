@@ -2,7 +2,7 @@
 \alias{get_ensemble_temp}
 \title{Download ensemble temperature data}
 \usage{
-  get_ensemble_temp(locator, type, start, end)
+get_ensemble_temp(locator, type, start, end)
 }
 \arguments{
   \item{locator}{A vector of either watershed basin ID's
@@ -21,22 +21,22 @@
   \item{end}{the end year to gather data to.}
 }
 \value{
-  a dataframe with precipitation predictions in mm for all
-  scenarios, gcms, for each time period.
+a dataframe with precipitation predictions in mm for all
+scenarios, gcms, for each time period.
 }
 \description{
-  Function wraps get_ensemble_climate_data() and returns
-  precipitation by basin or country in mm.  Output is the
-  10th 50th and 90th percentile for all gcm's for the a1
-  and b2 scenarios.
+Function wraps get_ensemble_climate_data() and returns
+precipitation by basin or country in mm.  Output is the
+10th 50th and 90th percentile for all gcm's for the a1 and
+b2 scenarios.
 }
 \details{
-  start and end year can be any years, but all years will
-  be coerced into periods outlined by the API
-  (http://data.worldbank.org/developers/climate -data-api)
-  anomaly periods are only valid for future scenarios and
-  based on a reference period of 1969 - 1999, see API for
-  full details.
+start and end year can be any years, but all years will be
+coerced into periods outlined by the API
+(http://data.worldbank.org/developers/climate -data-api)
+anomaly periods are only valid for future scenarios and
+based on a reference period of 1969 - 1999, see API for
+full details.
 }
 \examples{
 \dontrun{
