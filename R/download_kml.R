@@ -26,9 +26,12 @@ download_kml <- function(locator, resolution = .007) {
   #check which kml are already downloaded
   to_download <- locator[!locator%in%kml_files]
   base_url <- "http://climatedataapi.worldbank.org/climateweb/rest/v1"
-  download_pb <- txtProgressBar(min = 0, max = length(to_download), style = 3)
-  ###Loop through downloading each file and writing it.
+  
   if(length(to_download) > 0){
+    download_pb <- txtProgressBar(min = 0, max = length(to_download), style = 3)
+ 
+  ###Loop through downloading each file and writing it.
+  
    for(i in 1:length(to_download)) {
       full_url <- paste(base_url, geo_ref, "kml", resolution,to_download[i], sep="/")
       temp_file <- content(GET(url = full_url), as = "text")
@@ -38,8 +41,8 @@ download_kml <- function(locator, resolution = .007) {
       close(to_write)
       setTxtProgressBar(download_pb, i)
    }
-  }
+  
   close(download_pb)
- 
+  }
 } 
 

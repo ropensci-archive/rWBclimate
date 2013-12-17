@@ -10,10 +10,11 @@ get_ensemble_stats(locator, type, stat)
   (http://unstats.un.org/unsd/methods/m49/m49alpha.htm) or
   the basin ID [1-468]}
 
+  \item{type}{the type of data you want "mavg" for monthly
+  averages, "annualavg"}
+
   \item{stat}{The statistics of interest, must be one of
   the ones listed above.}
-
-  \item{type}{You'll need to describe this}
 }
 \description{
 Statistics can be from either two time periods: 2046 - 2065

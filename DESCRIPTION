@@ -8,6 +8,7 @@ URL: http://github.com/ropensci/rWBclimate
 BugReports: http://github.com/ropensci/rWBclimate/issues
 Type: Package
 Title: rWBclimate
+Suggests: rjson
 Description: A package to download and interface with World Bank climate data
 LazyData: True
 Depends:

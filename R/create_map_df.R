@@ -45,6 +45,7 @@ create_map_df <- function(locator,resolution = .007) {
     kml_f$ID <- to_plot[i]
     df_out[[i]] <- kml_f
     setTxtProgressBar(map_pb, i)
+    
   }
     close(map_pb)
    return(ldply(df_out, data.frame))
