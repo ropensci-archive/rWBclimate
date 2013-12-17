@@ -19,8 +19,9 @@
 #'}
 #' @import plyr
 #' @param locator The ISO3 country code that you want data about. (http://unstats.un.org/unsd/methods/m49/m49alpha.htm) or the basin ID [1-468]
+#' @param type the type of data you want "mavg" for monthly averages, "annualavg"
 #' @param stat The statistics of interest, must be one of the ones listed above.
-#' @param type You'll need to describe this
+#' 
 #' @examples \dontrun{
 #'  ### Request data on the US for days of rain over 2 mm
 #'  ens_dat <- get_ensemble_stats("USA","mavg","ppt_days2")
