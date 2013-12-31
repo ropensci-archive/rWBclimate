@@ -25,9 +25,6 @@ a map dataframe, and a climate dataframe.  The climate data
 must have one data point per spatial mapping point,e.g. 1
 data point per country or basin being mapped.
 }
-\details{
-<add text here>
-}
 \examples{
 \dontrun{
 #Set the kmlpath option

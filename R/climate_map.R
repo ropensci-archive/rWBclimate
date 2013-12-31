@@ -5,7 +5,6 @@
 #'@param data_df a climate dataframe with one piece of data to be mapped to each unique spatial polygon.
 #'@param return_map True returns a ggplot2 object, False returns a dataframe where data items are matched to their polygon that you can plot later on.
 #'@return Either a ggplot2 map or a dataframe depending on the parameter return_map
-#'@details <add text here>
 #'@examples \dontrun{
 #' #Set the kmlpath option
 #' options(kmlpath = "/Users/edmundhart/kmltemp")
