@@ -10,7 +10,7 @@
 #' options(kmlpath = "/Users/edmundhart/kmltemp")
 #' ##Here we use a list basins for Africa
 #' af_basin <- create_map_df(Africa_basin)
-#'af_basin_dat <- get_ensemble_temp(Africa_basin,"annualanom",2080,2100)
+#' af_basin_dat <- get_ensemble_temp(Africa_basin,"annualanom",2080,2100)
 #' ##  Subset data to just one scenario, and one percentile
 #' af_basin_dat <- subset(af_basin_dat,af_basin_dat$scenario == "a2")
 #' af_basin_dat <- subset(af_basin_dat,af_basin_dat$percentile == 50)

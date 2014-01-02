@@ -40,6 +40,7 @@ persistent until you delete them.
 \examples{
 \dontrun{
 to_map <- create_map_df(c("USA","MEX","CAN"))
+ggplot(to_map, aes(x=long, y=lat,group=group))+ geom_polygon()
 }
 }
 
