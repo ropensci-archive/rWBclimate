@@ -14,7 +14,7 @@
 
 
 get_ensemble_climate_data <- function(locator,geo_type,type, cvar, start, end){
-  base_url <- "http://climatedataapi.worldbank.org/climateweb/rest/v1/"
+  base_url <- "http://api.worldbank.org/climateweb/rest/v1/"
   
   ### Error handling
   if(geo_type == "country"){
