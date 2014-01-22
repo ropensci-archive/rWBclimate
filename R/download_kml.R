@@ -25,7 +25,7 @@ download_kml <- function(locator, resolution = .007) {
   
   #check which kml are already downloaded
   to_download <- locator[!locator%in%kml_files]
-  base_url <- "http://climatedataapi.worldbank.org/climateweb/rest/v1"
+  base_url <- "http://api.worldbank.org/climateweb/rest/v1"
   
   if(length(to_download) > 0){
     download_pb <- txtProgressBar(min = 0, max = length(to_download), style = 3)
