@@ -5,10 +5,9 @@
 #' @import httr
 #' @importFrom utils txtProgressBar setTxtProgressBar
 #' @param locator The a vector of ISO3 country code's that you want data about. (http://unstats.un.org/unsd/methods/m49/m49alpha.htm) or the basin ID's [1-468] (http://data.worldbank.org/sites/default/files/climate_data_api_basins.pdf)
-#' @param resolution The optional simplification value is a decimal value between 0 and 1 that specifies boundary resolution; 0 (the default) is the highest available resolution while 1 is the lowest. This option lets you request simpler and thus smaller boundaries at the expense of resolution. A value of 0.01 reduces output and complexity by roughly 50%; values above 0.05 begin to lose too much detail.
 #' @details kml files can be quite large making downloading them every time you want to make a map time consuming.  To 
 #' reduce this time it's easiest to download kml files and store them.  To set the directory use a line like this: \code{options(kmlpath="/Users/emh/kmltemp")}  The option must be called "kmlpath".
-download_kml <- function(locator, resolution = .007) {
+download_kml <- function(locator) {
   if(is.null(getOption("kmlpath"))){stop("You must first set the kmlpath parameter in options, see help for details.")}
   #get vector of file names.
   my_path <- getOption("kmlpath")
@@ -33,7 +32,7 @@ download_kml <- function(locator, resolution = .007) {
   ###Loop through downloading each file and writing it.
   
    for(i in 1:length(to_download)) {
-      full_url <- paste(base_url, geo_ref, "kml", resolution,to_download[i], sep="/")
+      full_url <- paste(base_url, geo_ref, "kml", to_download[i], sep="/")
       temp_file <- content(GET(url = full_url), as = "text")
       ###Write file
       to_write<- file(paste(my_path,to_download[i], ".kml", sep=""), open = "w")
