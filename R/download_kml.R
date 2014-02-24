@@ -17,7 +17,6 @@ download_kml <- function(locator) {
   kml_files <- gsub(".kml","", list.files(my_path, "kml"))
   
   #Convert numeric basin numbers to strings if they were entered incorrectly
-  resolution <- as.character(resolution)
   locator <- as.character(locator)
   locator <- toupper(locator)
   geo_ref <- check_locator(locator)
