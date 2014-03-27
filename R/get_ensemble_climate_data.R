@@ -36,11 +36,14 @@ get_ensemble_climate_data <- function(locator,geo_type,type, cvar, start, end){
   data_url <- paste(geo_type,type,"ensemble",cvar,start,end,locator,sep="/")
   extension <- ".json"
   full_url <- paste(base_url,data_url,extension,sep="")
-  parsed_data <- try(content(GET(full_url),as="parsed"),silent=T)
-  if(sum(grep("unexpected",parsed_data)) > 0){
+  raw_data <- try(content(GET(full_url),as="text"),silent=T)
+  data_out <- fromJSON(raw_data)
+  
+  
+  if(sum(grep("unexpected",data_out)) > 0){
     stop(paste("You entered a country for which there is no data. ",locator," is not a country with any data"))
   }
-  data_out <- ldply(parsed_data,data.frame)
+  #data_out <- ldply(parsed_data,data.frame)
   if( type == "mavg"){
     data_out$month  <- rep(1:12,dim(data_out)[1]/12)
   }

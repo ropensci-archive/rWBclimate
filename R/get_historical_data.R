@@ -4,7 +4,7 @@
 #' and precipitation data. These data are separate from the outputs of the GCMs,
 #' and they are based on gridded climatologies from the Climate Research Unit.
 #' 
-#' @import httr plyr
+#' @import httr plyr jsonlite
 #' @param locator The ISO3 country code that you want data about. (http://unstats.un.org/unsd/methods/m49/m49alpha.htm) or the basin ID [1-468].
 #' The historical period for country is 1901 - 2009, and 1960 - 2009 for basin 
 #' @param cvar The climate variable you're interested in. "\emph{pr}" for precipitation, "\emph{tas}" for temperature in celcius.
@@ -46,11 +46,13 @@ if(geo_type == "basin"){
 data_url <- paste(geo_type,"cru",cvar,time_scale,locator,sep="/")
 extension <- ".json"
 full_url <- paste(base_url,data_url,extension,sep="")
-parsed_data <- try(content(GET(full_url),as="parsed"),silent=T)
-if(sum(grep("unexpected",parsed_data)) > 0){
+raw_data <- try(content(GET(full_url),as="text"),silent=T)
+
+if(sum(grep("unexpected",raw_data)) > 0){
   stop(paste("You entered a country for which there is no data. ",locator," is not a country with any data"))
 }
-data_out <- ldply(parsed_data,data.frame)
+
+data_out <- fromJSON(raw_data)
 # data_out <- data.frame(do.call(rbind, parsed_data))
 
 if(time_scale == "month"){
