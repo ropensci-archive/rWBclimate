@@ -52,7 +52,7 @@ if(sum(grep("unexpected",raw_data)) > 0){
   stop(paste("You entered a country for which there is no data. ",locator," is not a country with any data"))
 }
 
-data_out <- fromJSON(raw_data)
+data_out <- jsonlite:::fromJSON(raw_data)
 # data_out <- data.frame(do.call(rbind, parsed_data))
 
 if(time_scale == "month"){
