@@ -39,7 +39,7 @@ create_map_df <- function(locator) {
     
     my_layer <- ogrListLayers(fName)
     kml_tmp <- readOGR(paste(my_path, to_plot[i], ".kml", sep = ""),layer = my_layer[1], verbose = F)
-    kml_f <- fortify(kml_tmp)
+    kml_f <- suppressMessages(fortify(kml_tmp))
     kml_f$group <- paste(kml_f$group, to_plot[i], sep = "-")
     kml_f$ID <- to_plot[i]
     df_out[[i]] <- kml_f
