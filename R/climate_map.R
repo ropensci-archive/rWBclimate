@@ -37,6 +37,10 @@ climate_map <- function(map_df, data_df, return_map = TRUE){
     data_vec <- c(data_vec,rep(data_df$data[i],sum(map_df$ID==ids[i])))
   }
   
+  if(is.list(data_vec)){
+    data_vec <- unlist(data_vec)
+  }
+  
   map_df$data <- data_vec
   map <- ggplot(map_df, aes(x=long, y=lat,group=group,fill=data))+ geom_polygon()
   if(return_map == TRUE){return(map)
