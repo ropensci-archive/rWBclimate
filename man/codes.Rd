@@ -3,7 +3,7 @@
 \alias{codes}
 \title{isocodes data}
 \description{
-isocodes data
+  isocodes data
 }
 \keyword{datasets}
 

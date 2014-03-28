@@ -4,7 +4,7 @@
 #' of all models (15 for A1, 13 for B2).  Ensemble requets can be for countries
 #' or basins.
 #' 
-#' @import httr plyr
+#' @import httr plyr reshape2 jsonlite
 #' @param locator The ISO3 country code that you want data about. (http://unstats.un.org/unsd/methods/m49/m49alpha.htm) or the basin ID [1-468]
 #' @param geo_type basin or country depending on the locator type
 #' @param type the type of data you want "mavg" for monthly averages, "annualavg"
@@ -44,9 +44,32 @@ get_ensemble_climate_data <- function(locator,geo_type,type, cvar, start, end){
     stop(paste("You entered a country for which there is no data. ",locator," is not a country with any data"))
   }
   #data_out <- ldply(parsed_data,data.frame)
-  if( type == "mavg"){
+  if(type == "mavg" && start < 2010){
+    ### Unpack the lists
+    tmp <- data.frame(sapply(data_out$monthV,unlist))
+    colnames(tmp) <- data_out$percentile
+    tmp$fromYear <- rep(start,12)
+    tmp$toYear <- rep(end,12)
+    data_out <- melt(tmp,id.vars =c("fromYear","toYear"), variable.name = "percentile", value.name = "data")
     data_out$month  <- rep(1:12,dim(data_out)[1]/12)
   }
+  
+  if(type == "mavg" && start > 2010){
+    do_list <- list()
+    for( i in 1:length(unique(data_out$scenario))){
+      ### Unpack the lists
+      split_do <- subset(data_out,data_out$scenario == unique(data_out$scenario)[i])  
+      tmp <- data.frame(sapply(split_do$monthV,unlist))
+      colnames(tmp) <- split_do$percentile
+      tmp$fromYear <- rep(start,12)
+      tmp$toYear <- rep(end,12)
+      do_list[[i]] <- melt(tmp,id.vars =c("fromYear","toYear"), variable.name = c("percentile"), value.name = "data")
+      do_list[[i]]$scenario <- rep(split_do$scenario[1],dim(do_list[[i]])[1])
+      do_list[[i]]$month  <- rep(1:12,dim(do_list[[i]])[1]/12)
+    } 
+    data_out <- do.call(rbind,do_list)  
+  }
+  
   
   if(start < 2010){
     tmp_names <- c("scenario",colnames(data_out))

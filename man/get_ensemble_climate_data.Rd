@@ -2,7 +2,8 @@
 \alias{get_ensemble_climate_data}
 \title{Download ensemble climate data}
 \usage{
-get_ensemble_climate_data(locator, geo_type, type, cvar, start, end)
+  get_ensemble_climate_data(locator, geo_type, type, cvar,
+    start, end)
 }
 \arguments{
   \item{locator}{The ISO3 country code that you want data
@@ -30,8 +31,8 @@ get_ensemble_climate_data(locator, geo_type, type, cvar, start, end)
   will be rounded to the nearest end dat.}
 }
 \description{
-Download ensemble data for all models, returns the 10th,
-50th and 90th percentile of all models (15 for A1, 13 for
-B2).  Ensemble requets can be for countries or basins.
+  Download ensemble data for all models, returns the 10th,
+  50th and 90th percentile of all models (15 for A1, 13 for
+  B2).  Ensemble requets can be for countries or basins.
 }
 

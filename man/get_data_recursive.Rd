@@ -2,7 +2,8 @@
 \alias{get_data_recursive}
 \title{wratpper for get_climate_data()}
 \usage{
-get_data_recursive(locator, geo_type, type, cvar, start, end)
+  get_data_recursive(locator, geo_type, type, cvar, start,
+    end)
 }
 \arguments{
   \item{locator}{The ISO3 country code that you want data
@@ -30,9 +31,9 @@ get_data_recursive(locator, geo_type, type, cvar, start, end)
   will be rounded to the nearest end dat.}
 }
 \description{
-Function to recursively call the get_climate_data().
-Handles a vector of basins or countries as well as multiple
-dates.
+  Function to recursively call the get_climate_data().
+  Handles a vector of basins or countries as well as
+  multiple dates.
 }
 \examples{
 \dontrun{

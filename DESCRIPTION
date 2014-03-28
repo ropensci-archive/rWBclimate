@@ -2,17 +2,40 @@ Package: rWBclimate
 Maintainer: Edmund Hart <edmund.m.hart@gmail.com>
 Authors@R: c(person("Edmund", "Hart", role = c("aut", "cre"),
     email = "edmund.m.hart@gmail.com"))
-Version: 0.1.1
-License: MIT
+Version: 0.1.2
+License: MIT + file LICENSE
 URL: http://github.com/ropensci/rWBclimate
 BugReports: http://github.com/ropensci/rWBclimate/issues
 Type: Package
 Title: rWBclimate
-Description: A package to download and interface with World Bank climate data
+Description: A package for accessing World Bank climate data
 LazyData: True
 Depends:
     ggplot2,
     httr,
     plyr,
     rgdal,
-    jsonlite
+    jsonlite,
+    reshape2
+Collate:
+    'check_ISO_code.R'
+    'check_locator.R'
+    'climate_map.R'
+    'create_map_df.R'
+    'date_correct.R'
+    'download_kml.R'
+    'get_climate_data.R'
+    'get_data_recursive.R'
+    'get_ensemble_climate_data.R'
+    'get_ensemble_data_recursive.R'
+    'get_ensemble_precip.R'
+    'get_ensemble_stats.R'
+    'get_ensemble_temp.R'
+    'get_historical_data_recursive.R'
+    'get_historical_data.R'
+    'get_historical_precip.R'
+    'get_historical_temp.R'
+    'get_model_precip.R'
+    'get_model_temp.R'
+    'kml_to_sp.R'
+    'rWBclimate-package.r'

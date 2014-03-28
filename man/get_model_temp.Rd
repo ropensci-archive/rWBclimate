@@ -2,7 +2,7 @@
 \alias{get_model_temp}
 \title{Download GCM temperature data}
 \usage{
-get_model_temp(locator, type, start, end)
+  get_model_temp(locator, type, start, end)
 }
 \arguments{
   \item{locator}{A vector of either watershed basin ID's
@@ -21,21 +21,21 @@ get_model_temp(locator, type, start, end)
   \item{end}{the end year to gather data to.}
 }
 \value{
-a dataframe with temperature predictions in degrees C for
-all scenarios, gcms, for each time period.
+  a dataframe with temperature predictions in degrees C for
+  all scenarios, gcms, for each time period.
 }
 \description{
-Function wraps get_climate_data() and returns temperature
-by basin or country in degrees C as output from all 15
-models, for the a1 and b2 scenarios.
+  Function wraps get_climate_data() and returns temperature
+  by basin or country in degrees C as output from all 15
+  models, for the a1 and b2 scenarios.
 }
 \details{
-start and end year can be any years, but all years will be
-coerced into periods outlined by the API
-(http://data.worldbank.org/developers/climate -data-api)
-anomaly periods are only valid for future scenarios and
-based on a reference period of 1969 - 1999, see API for
-full details.
+  start and end year can be any years, but all years will
+  be coerced into periods outlined by the API
+  (http://data.worldbank.org/developers/climate -data-api)
+  anomaly periods are only valid for future scenarios and
+  based on a reference period of 1969 - 1999, see API for
+  full details.
 }
 \examples{
 \dontrun{

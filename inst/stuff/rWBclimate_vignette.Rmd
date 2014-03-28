@@ -4,28 +4,21 @@
 -->
 
 `rWBclimate` 
+
 Introduction 
 ========================================================
+
 rWBclimate is an R interface for the World Bank climate data used in the World Bank [climate knowledge portal](http://sdwebx.worldbank.org/climateportal/index.cfm).  
 
-Installation
-------
-Right now the package is only installable from github with [devtools](http://cran.r-project.org/web/packages/devtools/index.html):
 
-```{r install, eval=FALSE}
-install.packages("devtools")
-require(devtools)
-
-install_github("rWBclimate", "ropensci")
-require(rWBclimate)
-```
 Package description
 ----
 
 `rWBclimate` provides access to three different classes of climate data at two different spatial scales.  The three different classes of data are GCM model , ensemble and historical data.  Each data class will let you download two different four different types for two different variables.  The two variables are either precipitation expressed in millimeters or temperature as degrees celcius, and for each variable you can download your data in one of four types. The data is fully described below along with examples.
 
 Data classes
----
+------
+
 *__Model data__*
 
 Almost all model data in the Climate Data API are derived from 15 global circulation models (GCMs) used by the Intergovernmental Panel on Climate Change (IPCC) 4th Assessment Reports. The models simulate the response of the global climate system to increasing greenhouse gas concentrations. The data in the Climate Data API have been aggregated to both the country and basin levels, as explained below. Note these data are modeled estimates of temperature and precipitation changes in different time periods under different GCMs and scenarios. They include changes for future time periods and also as “backcasting” (model representations of the past) set for past time periods. The latter should not be confused with any instrumental or observed data. There is a specific dataset with historical measured climate data as well.
@@ -114,7 +107,7 @@ ggplot(usa.dat[usa.dat$scenario=="a2",],aes(x=month,y=data,group=gcm,colour=gcm)
 Data can be extracted from countries or basins submitted as vectors. Here we will plot the expected temperature anomaly for each 20 year period over a baseline control period of 1961-2000.  These countries chosen span the north to south pole.  It's clear from the plot that the northern most countries (US and Canada) have the biggest anomaly, and Belize, the most equatorial country, has the smallest anomaly.
 ```{r annualdata,cache=TRUE}
 country.list <- c("CAN","USA","MEX","BLZ","COL","PER","BOL","ARG")
-country.dat <- get_model_temp(country.list,"annualanom",2010,2100)
+country.dat <- get_model_temp(country.list,"annualanom",2020,2100)
 #Subset data
 country.dat.bcc <- country.dat[country.dat$gcm == "bccr_bcm2_0", ]
 ##Exclude A2 scenario

@@ -1,9 +1,9 @@
 base
 ggplot2
 httr
+jsonlite
 knitr
 plyr
 rgdal
 rWBclimate
 sp
-XML

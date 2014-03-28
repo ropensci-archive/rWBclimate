@@ -1,4 +1,4 @@
-rWBclimate
+`rWBclimate`
 ==========
 
 [![Build Status](https://api.travis-ci.org/ropensci/rWBclimate.png)](https://travis-ci.org/ropensci/rWBclimate)
@@ -215,7 +215,7 @@ Data can be mapped in [ggplot2](http://docs.ggplot2.org/current/) by downloading
 Creating map data frames is straightforward, simply provide a list of valid country codes to the function `create_map_df`
 ```{r map_plot,fig.width=5.5, fig.height=7,warning=FALSE,message=FALSE}
 #Set the kmlpath option
-options(kmlpath = "/Users/edmundhart/kmltemp")
+options(kmlpath = "~/kmltemp")
 ##Here we use a list basins for Africa
 af_basin <- create_map_df(Africa_basin)
 ggplot(af_basin, aes(x=long, y=lat,group=group))+ geom_polygon() + theme_bw()
@@ -245,7 +245,7 @@ af_map + scale_fill_continuous("Temperature \n anomaly",low="yellow",high = "red
 *Example 3: Creating a temperature map of the world*
 
 ```{r worldmap,fig.width=8, fig.height=6,warning=FALSE,message=FALSE}
-options(kmlpath = "/Users/edmundhart/kmltemp")
+options(kmlpath = "~/kmltemp")
 ### Combine all country vectors
 
 world <- c(NoAm_country,SoAm_country,Eur_country,Asia_country,Africa_country,Oceana_country)
@@ -264,15 +264,15 @@ To cite package ‘rWBclimate’ in publications use:
 
 ```coffee
 
-  Edmund Hart (). rWBclimate: rWBclimate. R package version 1.0.
+  Edmund Hart (). rWBclimate: A package for accessing World Bank climate data. R package version 0.1.1.
   http://github.com/ropensci/rWBclimate
 
 A BibTeX entry for LaTeX users is
 
   @Manual{,
-    title = {rWBclimate: rWBclimate},
+    title = {rWBclimate: A package for accessing World Bank climate data},
     author = {Edmund Hart},
-    note = {R package version 1.0},
+    note = {R package version 0.1.1},
     url = {http://github.com/ropensci/rWBclimate},
   }
 ```

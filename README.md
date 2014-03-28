@@ -1,7 +1,11 @@
-rWBclimate
+`rWBclimate`
 ==========
 
 [![Build Status](https://api.travis-ci.org/ropensci/rWBclimate.png)](https://travis-ci.org/ropensci/rWBclimate)
+
+### Currently there are a couple of errors if you've updated to httr 0.3 that are still being worked out.  I almost have them fixed and it should be done this weekend.
+
+
 
 Introduction 
 ========================================================
@@ -92,18 +96,62 @@ Say you want to compare temperature from two different models in the USA to see 
 
 ```r
 usa.dat <- get_model_temp("USA", "mavg", 2080, 2100)
+```
+
+```
+## Error: replacement has 24 rows, data has 28
+```
+
+```r
 usa.dat.bcc <- usa.dat[usa.dat$gcm == "bccr_bcm2_0", ]
+```
+
+```
+## Error: object 'usa.dat' not found
+```
+
+```r
 usa.dat.had <- usa.dat[usa.dat$gcm == "ukmo_hadcm3", ]
+```
+
+```
+## Error: object 'usa.dat' not found
+```
+
+```r
 ## Add a unique ID to each for easier plotting
 usa.dat.bcc$ID <- paste(usa.dat.bcc$scenario, usa.dat.bcc$gcm, sep = "-")
+```
+
+```
+## Error: object 'usa.dat.bcc' not found
+```
+
+```r
 usa.dat.had$ID <- paste(usa.dat.had$scenario, usa.dat.had$gcm, sep = "-")
+```
+
+```
+## Error: object 'usa.dat.had' not found
+```
+
+```r
 plot.df <- rbind(usa.dat.bcc, usa.dat.had)
+```
+
+```
+## Error: object 'usa.dat.bcc' not found
+```
+
+```r
 ggplot(plot.df, aes(x = as.factor(month), y = data, group = ID, colour = gcm, 
     linetype = scenario)) + geom_point() + geom_path() + ylab("Average temperature in degrees C \n between 2080 and 2100") + 
     xlab("Month") + theme_bw()
 ```
 
-![plot of chunk getmodeldata](figure/getmodeldata.png) 
+```
+## Error: object 'plot.df' not found
+```
 
 
 Subsetting all the data can be a bit tedious.  You could also compare all the models but just for one scenario, the A2.
@@ -115,7 +163,9 @@ ggplot(usa.dat[usa.dat$scenario == "a2", ], aes(x = month, y = data, group = gcm
     xlab("Month") + theme_bw()
 ```
 
-![plot of chunk plotallmodeldata](figure/plotallmodeldata.png) 
+```
+## Error: object 'usa.dat' not found
+```
 
 
 *Example 2: Plotting annual data for different countries*
@@ -134,7 +184,13 @@ ggplot(country.dat.bcc, aes(x = fromYear, y = data, group = locator, colour = lo
     theme_bw()
 ```
 
-![plot of chunk annualdata](figure/annualdata.png) 
+```
+## Don't know how to automatically pick scale for object of type list. Defaulting to continuous
+```
+
+```
+## Error: geom_point requires the following missing aesthetics: y
+```
 
 
 
@@ -149,18 +205,55 @@ Let's look at monthly precipitation predictions for Indonesia for the period of 
 
 ```r
 idn.dat <- get_ensemble_precip("IDN", "mavg", 2080, 2100)
+```
+
+```
+## Error: replacement has 0 rows, data has 6
+```
+
+```r
 # Set line types
 ltype <- rep(1, dim(idn.dat)[1])
+```
+
+```
+## Error: object 'idn.dat' not found
+```
+
+```r
 ltype[idn.dat$percentile != 50] <- 2
+```
+
+```
+## Error: object 'ltype' not found
+```
+
+```r
 idn.dat$ltype <- ltype
+```
+
+```
+## Error: object 'ltype' not found
+```
+
+```r
 # Create uniqueIDs
 idn.dat$uid <- paste(idn.dat$scenario, idn.dat$percentile, sep = "-")
+```
+
+```
+## Error: object 'idn.dat' not found
+```
+
+```r
 ggplot(idn.dat, aes(x = as.factor(month), y = data, group = uid, colour = scenario, 
     linetype = as.factor(ltype))) + geom_point() + geom_path() + xlab("Month") + 
     ylab("Rain in mm") + theme_bw()
 ```
 
-![plot of chunk comparing quantiles](figure/comparing quantiles.png) 
+```
+## Error: object 'idn.dat' not found
+```
 
 
 *Example 2: Ensemble statistics*
@@ -188,6 +281,13 @@ Similar to our previous example where we looked at temperature anomaly along a l
 ```r
 country.list <- c("ISL", "FIN", "NOR", "SWE")
 country.dat <- get_ensemble_stats(country.list, "mavg", "tmin_means")
+```
+
+```
+## Error: replacement has 0 rows, data has 6
+```
+
+```r
 ####### Subset data Exclude A2 scenario
 country.dat.b1 <- subset(country.dat, country.dat$scenario == "b1")
 # choose just one percentile
@@ -201,7 +301,13 @@ ggplot(country.dat.b1, aes(x = month, y = data, group = locator, colour = locato
     theme_bw() + xlab("Month")
 ```
 
-![plot of chunk enesmble data](figure/enesmble data.png) 
+```
+## Don't know how to automatically pick scale for object of type list. Defaulting to continuous
+```
+
+```
+## Error: object 'month' not found
+```
 
 
 
@@ -254,9 +360,12 @@ Creating map data frames is straightforward, simply provide a list of valid coun
 
 ```r
 # Set the kmlpath option
-options(kmlpath = "/Users/edmundhart/kmltemp")
+options(kmlpath = "~/kmltemp")
 ## Here we use a list basins for Africa
 af_basin <- create_map_df(Africa_basin)
+```
+
+```r
 ggplot(af_basin, aes(x = long, y = lat, group = group)) + geom_polygon() + theme_bw()
 ```
 
@@ -294,12 +403,16 @@ af_map + scale_fill_continuous("Temperature \n anomaly", low = "yellow", high = 
 
 
 ```r
-options(kmlpath = "/Users/edmundhart/kmltemp")
+options(kmlpath = "~/kmltemp")
 ### Combine all country vectors
 
 world <- c(NoAm_country, SoAm_country, Eur_country, Asia_country, Africa_country, 
     Oceana_country)
 world_map_df <- create_map_df(world)
+```
+
+
+```r
 world_dat <- get_ensemble_temp(world, "annualavg", 2080, 2100)
 ## Subset data to just one scenario, and one percentile
 world_dat <- subset(world_dat, world_dat$scenario == "a2")
@@ -317,19 +430,20 @@ To cite package ‘rWBclimate’ in publications use:
 
 ```coffee
 
-  Edmund Hart (). rWBclimate: rWBclimate. R package version 1.0.
+  Edmund Hart (). rWBclimate: A package for accessing World Bank climate data. R package version 0.1.1.
   http://github.com/ropensci/rWBclimate
 
 A BibTeX entry for LaTeX users is
 
   @Manual{,
-    title = {rWBclimate: rWBclimate},
+    title = {rWBclimate: A package for accessing World Bank climate data},
     author = {Edmund Hart},
-    note = {R package version 1.0},
+    note = {R package version 0.1.1},
     url = {http://github.com/ropensci/rWBclimate},
   }
 ```
 
 
 [![](http://ropensci.org/public_images/github_footer.png)](http://ropensci.org)
+
 
