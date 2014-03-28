@@ -1,9 +1,8 @@
-year <- sub("-.*", "", meta$Date)
 note <- sprintf("R package version %s", meta$Version)
 
 bibentry(bibtype = "Manual",
          title = "{rWBclimate}: A package for accessing World Bank climate data",
          author = c(person("Edmund", "Hart")),
-         year = year,
+         year = 2014,
          note = note,
          url = "http://www.github.com/ropensci/rwbclimate")
