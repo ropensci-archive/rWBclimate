@@ -1,0 +1,9 @@
+base
+ggplot2
+httr
+knitr
+plyr
+rgdal
+rWBclimate
+sp
+XML
