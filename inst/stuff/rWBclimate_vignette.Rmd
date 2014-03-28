@@ -83,6 +83,7 @@ Say you want to compare temperature from two different models in the USA to see 
 ```{r loadlib, echo=FALSE,warning=FALSE,message=FALSE,results='hide',cache=TRUE}
 library(ggplot2)
 library(rWBclimate)
+library(reshape2)
 ```
 
 ```{r getmodeldata,message=FALSE,cache=TRUE}

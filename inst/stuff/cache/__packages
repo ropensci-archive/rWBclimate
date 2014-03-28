@@ -4,6 +4,7 @@ httr
 jsonlite
 knitr
 plyr
+reshape2
 rgdal
 rWBclimate
 sp

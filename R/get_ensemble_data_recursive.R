@@ -30,6 +30,8 @@ get_ensemble_data_recursive <- function(locator,geo_type,type, cvar, start, end)
   dat_out <- ldply(data_out,data.frame)
   if(grepl("ann",type)){
     to_rep <- "annualVal"
+    ### Because of the new parsing methods data values come back as a list.  This will unlist them and flatten them out
+    dat_out$annualData <- unlist(dat_out$annualData)
   } else { to_rep <- "monthVals"}
   colnames(dat_out)[which(colnames(dat_out)==to_rep)] <- "data"
   

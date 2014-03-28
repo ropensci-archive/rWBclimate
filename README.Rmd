@@ -12,8 +12,8 @@ Installation
 Right now the package is only installable from github with [devtools](http://cran.r-project.org/web/packages/devtools/index.html):
 
 ```R
-install.packages("devtools")
-require(devtools)
+#install.packages("devtools")
+#require(devtools)
 
 install_github("rWBclimate", "ropensci")
 require(rWBclimate)
