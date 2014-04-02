@@ -39,7 +39,7 @@ get_climate_data <- function(locator,geo_type,type, cvar, start, end){
     stop(paste("You entered a country for which there is no data. ",locator," is not a country with any data"))
   }
   
-  data_out <- jsonlite:::fromJSON(raw_data)
+  data_out <- jsonlite::fromJSON(raw_data)
   if( type == "mavg" && start < 2010){
     ### Unpack the lists
     tmp <- data.frame(sapply(data_out$monthV,unlist))

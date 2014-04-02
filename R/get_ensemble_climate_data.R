@@ -37,7 +37,7 @@ get_ensemble_climate_data <- function(locator,geo_type,type, cvar, start, end){
   extension <- ".json"
   full_url <- paste(base_url,data_url,extension,sep="")
   raw_data <- try(content(GET(full_url),as="text"),silent=T)
-  data_out <- jsonlite:::fromJSON(raw_data)
+  data_out <- jsonlite::fromJSON(raw_data)
   
   
   if(sum(grep("unexpected",data_out)) > 0){
