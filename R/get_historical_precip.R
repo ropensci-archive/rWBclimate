@@ -23,5 +23,5 @@
 
 get_historical_precip <- function(locator,time_scale){
   cvar <- "pr"
-  return(rWBclimate:::get_historical_data_recursive(locator,cvar,time_scale))
+  return(get_historical_data_recursive(locator,cvar,time_scale))
 }

@@ -27,11 +27,11 @@ if(!time_scale%in%time_vec){
 }
 #Convert numeric basin numbers to strings if they were entered incorrectly
 locator <- as.character(locator)
-geo_type <- rWBclimate:::check_locator(locator)
+geo_type <- check_locator(locator)
 
 ### Error handling
 if(geo_type == "country"){
-  rWBclimate:::check_ISO_code(locator)
+  check_ISO_code(locator)
 }
 
 if(geo_type == "basin"){

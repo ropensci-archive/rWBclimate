@@ -51,7 +51,7 @@ get_ensemble_stats <- function(locator, type, stat){
   locator <- as.character(locator)
   
   ## Error handling for location input
-  geo_ref <- rWBclimate:::check_locator(locator)
+  geo_ref <- check_locator(locator)
   
 
   ### Set dates to retrieve both future scenarios.
@@ -61,7 +61,7 @@ get_ensemble_stats <- function(locator, type, stat){
   counter <- 1
   for(i in 1:length(locator)){
     for(j in 1:length(dates[,1])){
-      data_out[[counter]] <- rWBclimate:::get_ensemble_climate_data(locator[i],geo_ref,type,stat,dates[j,1],dates[j,2])
+      data_out[[counter]] <- get_ensemble_climate_data(locator[i],geo_ref,type,stat,dates[j,1],dates[j,2])
       counter <- counter + 1
     }
   }

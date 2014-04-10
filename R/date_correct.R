@@ -8,7 +8,7 @@
 #'@examples \dontrun{
 #'date_correct(1921,1957)
 #'}
-#'@export
+
 
 date_correct <- function(start, end){
   #basic error handling of user input

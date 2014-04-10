@@ -17,7 +17,7 @@ create_map_df <- function(locator) {
   ### All error handling is done in the download_kml()
   locator <- as.character(locator)
   locator <- toupper(locator)
-  rWBclimate:::download_kml(locator)
+  download_kml(locator)
 
   
   my_path <- path.expand(getOption("kmlpath"))

@@ -12,7 +12,7 @@ get_historical_data_recursive <- function(locator,cvar,time_scale){
 data_out <- list()
 counter <- 1
 for(i in 1:length(locator)){
-    data_out[[i]] <- rWBclimate:::get_historical_data(locator[i],cvar,time_scale)
+    data_out[[i]] <- get_historical_data(locator[i],cvar,time_scale)
 }
 
 dat_out <- ldply(data_out,data.frame)

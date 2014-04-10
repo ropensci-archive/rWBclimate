@@ -42,8 +42,8 @@ get_model_temp <- function(locator,type, start, end){
   }
   #Convert numeric basin numbers to strings if they were entered incorrectly
   locator <- as.character(locator)
-  geo_ref <- rWBclimate:::check_locator(locator)
+  geo_ref <- check_locator(locator)
   
-  output <- rWBclimate:::get_data_recursive(locator,geo_ref,type, "tas", start, end)
+  output <- get_data_recursive(locator,geo_ref,type, "tas", start, end)
   return(output)
 }
