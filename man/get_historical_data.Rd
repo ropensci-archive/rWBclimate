@@ -2,7 +2,7 @@
 \alias{get_historical_data}
 \title{Download historical climate data}
 \usage{
-  get_historical_data(locator, cvar, time_scale)
+get_historical_data(locator, cvar, time_scale)
 }
 \arguments{
   \item{locator}{The ISO3 country code that you want data
@@ -20,20 +20,20 @@
   "\emph{decade}"}
 }
 \value{
-  a dataframe with historical climate data
+a dataframe with historical climate data
 }
 \description{
-  The Climate Data API provides access to historical
-  temperature and precipitation data. These data are
-  separate from the outputs of the GCMs, and they are based
-  on gridded climatologies from the Climate Research Unit.
+The Climate Data API provides access to historical
+temperature and precipitation data. These data are separate
+from the outputs of the GCMs, and they are based on gridded
+climatologies from the Climate Research Unit.
 }
 \details{
-  The time_scale parameter returns a different number of
-  variables depending on the input timescale. \emph{Month}
-  will return 12 values, a historical average for that
-  month across all years.  \emph{Year} will return yearly
-  averages for each year, and \emph{decade} will return
-  decade averages.
+The time_scale parameter returns a different number of
+variables depending on the input timescale. \emph{Month}
+will return 12 values, a historical average for that month
+across all years.  \emph{Year} will return yearly averages
+for each year, and \emph{decade} will return decade
+averages.
 }
 

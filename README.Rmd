@@ -12,10 +12,6 @@ Installation
 Right now the package is only installable from github with [devtools](http://cran.r-project.org/web/packages/devtools/index.html):
 
 ```R
-#install.packages("devtools")
-#require(devtools)
-
-install_github("rWBclimate", "ropensci")
 require(rWBclimate)
 ```
 Package description
@@ -264,7 +260,7 @@ To cite package ‘rWBclimate’ in publications use:
 
 ```coffee
 
-  Edmund Hart (). rWBclimate: A package for accessing World Bank climate data. R package version 0.1.1.
+  Edmund Hart (). rWBclimate: A package for accessing World Bank climate data. R package version 0.1.3
   http://github.com/ropensci/rWBclimate
 
 A BibTeX entry for LaTeX users is
@@ -272,7 +268,7 @@ A BibTeX entry for LaTeX users is
   @Manual{,
     title = {rWBclimate: A package for accessing World Bank climate data},
     author = {Edmund Hart},
-    note = {R package version 0.1.1},
+    note = {R package version 0.1.3},
     url = {http://github.com/ropensci/rWBclimate},
   }
 ```

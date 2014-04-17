@@ -2,8 +2,7 @@
 \alias{get_climate_data}
 \title{get_climate_data}
 \usage{
-  get_climate_data(locator, geo_type, type, cvar, start,
-    end)
+get_climate_data(locator, geo_type, type, cvar, start, end)
 }
 \arguments{
   \item{locator}{The ISO3 country code that you want data
@@ -31,8 +30,8 @@
   will be rounded to the nearest end dat.}
 }
 \description{
-  Download monthly average climate data from the world bank
-  climate data api. Ideally you'll want to use the wrapper
-  functions that call this.
+Download monthly average climate data from the world bank
+climate data api. Ideally you'll want to use the wrapper
+functions that call this.
 }
 

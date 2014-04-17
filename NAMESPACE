@@ -1,6 +1,5 @@
 export(climate_map)
 export(create_map_df)
-export(date_correct)
 export(get_data_recursive)
 export(get_ensemble_precip)
 export(get_ensemble_stats)

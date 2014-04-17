@@ -10,6 +10,8 @@ Type: Package
 Title: rWBclimate
 Description: A package for accessing World Bank climate data
 LazyData: True
+VignetteBuilder: knitr
+Suggests: knitr
 Depends:
     ggplot2,
     httr,
@@ -18,25 +20,3 @@ Depends:
     jsonlite,
     reshape2,
     sp
-Collate:
-    'check_ISO_code.R'
-    'check_locator.R'
-    'climate_map.R'
-    'create_map_df.R'
-    'date_correct.R'
-    'download_kml.R'
-    'get_climate_data.R'
-    'get_data_recursive.R'
-    'get_ensemble_climate_data.R'
-    'get_ensemble_data_recursive.R'
-    'get_ensemble_precip.R'
-    'get_ensemble_stats.R'
-    'get_ensemble_temp.R'
-    'get_historical_data_recursive.R'
-    'get_historical_data.R'
-    'get_historical_precip.R'
-    'get_historical_temp.R'
-    'get_model_precip.R'
-    'get_model_temp.R'
-    'kml_to_sp.R'
-    'rWBclimate-package.r'

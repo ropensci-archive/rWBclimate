@@ -4,6 +4,6 @@
 \alias{rWBclimate-package}
 \title{rWBclimate}
 \description{
-  rWBclimate
+rWBclimate
 }
 

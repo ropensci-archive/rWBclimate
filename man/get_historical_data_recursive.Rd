@@ -2,7 +2,7 @@
 \alias{get_historical_data_recursive}
 \title{Download historical climate data recursively}
 \usage{
-  get_historical_data_recursive(locator, cvar, time_scale)
+get_historical_data_recursive(locator, cvar, time_scale)
 }
 \arguments{
   \item{locator}{The ISO3 country code that you want data
@@ -20,17 +20,17 @@
   "\emph{decade}"}
 }
 \value{
-  a dataframe with historical climate data
+a dataframe with historical climate data
 }
 \description{
-  Recursively get historical data
+Recursively get historical data
 }
 \details{
-  The time_scale parameter returns a different number of
-  variables depending on the input timescale. \emph{Month}
-  will return 12 values, a historical average for that
-  month across all years.  \emph{Year} will return yearly
-  averages for each year, and \emph{decade} will return
-  decade averages.
+The time_scale parameter returns a different number of
+variables depending on the input timescale. \emph{Month}
+will return 12 values, a historical average for that month
+across all years.  \emph{Year} will return yearly averages
+for each year, and \emph{decade} will return decade
+averages.
 }
 

@@ -2,7 +2,7 @@
 \alias{create_map_df}
 \title{Create mapable dataframe}
 \usage{
-  create_map_df(locator)
+create_map_df(locator)
 }
 \arguments{
   \item{locator}{The a vector of ISO3 country code's that
@@ -12,20 +12,19 @@
   (http://data.worldbank.org/sites/default/files/climate_data_api_basins.pdf)}
 }
 \description{
-  A function that will download maps for a vector of basins
-  or country codes and return a data frame that has the kml
-  output processed such that it can be plotted with ggplot2
-  and other mapping functions:
+A function that will download maps for a vector of basins
+or country codes and return a data frame that has the kml
+output processed such that it can be plotted with ggplot2
+and other mapping functions:
 }
 \details{
-  kml files can be quite large (100k-600k per country)
-  making downloading them every time you want to make a map
-  time consuming.  To reduce this time it's easiest to
-  download kml files and store them.  To set the directory
-  use a line like this:
-  \code{options(kmlpath="/Users/emh/kmltemp")} The option
-  must be called "kmlpath".  These files will be persistent
-  until you delete them.
+kml files can be quite large (100k-600k per country) making
+downloading them every time you want to make a map time
+consuming.  To reduce this time it's easiest to download
+kml files and store them.  To set the directory use a line
+like this: \code{options(kmlpath="/Users/emh/kmltemp")} The
+option must be called "kmlpath".  These files will be
+persistent until you delete them.
 }
 \examples{
 \dontrun{

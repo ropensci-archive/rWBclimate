@@ -2,8 +2,7 @@
 \alias{kml_to_sp}
 \title{Convert kml to polygon}
 \usage{
-  kml_to_sp(map_df, df = NULL,
-    crs_string = "+proj=longlat +datum=WGS84")
+kml_to_sp(map_df, df = NULL, crs_string = "+proj=longlat +datum=WGS84")
 }
 \arguments{
   \item{map_df}{a map dataframe generated from
@@ -16,18 +15,18 @@
   spatial projection.  Default is WSGS84.}
 }
 \value{
-  a SpatialPolygon object
+a SpatialPolygon object
 }
 \description{
-  Create an sp SpatialPolygon or SpatialPolygonDataFrame
-  object from a downloaded KML file and data file
+Create an sp SpatialPolygon or SpatialPolygonDataFrame
+object from a downloaded KML file and data file
 }
 \details{
-  If a dataframe is included, a spatial polygon dataframe
-  object is created.  The dataframe must have one unique
-  piece of information per polygon, otherwise an error will
-  be thrown.  However just a basic spatial polygon will be
-  created if no dataframe is included.
+If a dataframe is included, a spatial polygon dataframe
+object is created.  The dataframe must have one unique
+piece of information per polygon, otherwise an error will
+be thrown.  However just a basic spatial polygon will be
+created if no dataframe is included.
 }
 \examples{
 \dontrun{

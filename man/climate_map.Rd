@@ -2,7 +2,7 @@
 \alias{climate_map}
 \title{Map climate data}
 \usage{
-  climate_map(map_df, data_df, return_map = TRUE)
+climate_map(map_df, data_df, return_map = TRUE)
 }
 \arguments{
   \item{map_df}{a map dataframe generated from
@@ -16,15 +16,14 @@
   polygon that you can plot later on.}
 }
 \value{
-  Either a ggplot2 map or a dataframe depending on the
-  parameter return_map
+Either a ggplot2 map or a dataframe depending on the
+parameter return_map
 }
 \description{
-  Create maps of climate data.  It requires two data
-  inputs, a map dataframe, and a climate dataframe.  The
-  climate data must have one data point per spatial mapping
-  point,e.g. 1 data point per country or basin being
-  mapped.
+Create maps of climate data.  It requires two data inputs,
+a map dataframe, and a climate dataframe.  The climate data
+must have one data point per spatial mapping point,e.g. 1
+data point per country or basin being mapped.
 }
 \examples{
 \dontrun{

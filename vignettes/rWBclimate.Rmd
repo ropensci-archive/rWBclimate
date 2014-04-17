@@ -1,24 +1,25 @@
 <!--
-%\VignetteEngine{knitr}
-%\VignetteIndexEntry{An R Markdown Vignette made with knitr}
+%\VignetteEngine{knitr::knitr}
+%\VignetteIndexEntry{rWBclimate}
 -->
-
-`rWBclimate` 
-
 Introduction 
 ========================================================
-
 rWBclimate is an R interface for the World Bank climate data used in the World Bank [climate knowledge portal](http://sdwebx.worldbank.org/climateportal/index.cfm).  
 
+Installation
+------
+Right now the package is only installable from github with [devtools](http://cran.r-project.org/web/packages/devtools/index.html):
 
+```R
+require(rWBclimate)
+```
 Package description
 ----
 
 `rWBclimate` provides access to three different classes of climate data at two different spatial scales.  The three different classes of data are GCM model , ensemble and historical data.  Each data class will let you download two different four different types for two different variables.  The two variables are either precipitation expressed in millimeters or temperature as degrees celcius, and for each variable you can download your data in one of four types. The data is fully described below along with examples.
 
 Data classes
-------
-
+---
 *__Model data__*
 
 Almost all model data in the Climate Data API are derived from 15 global circulation models (GCMs) used by the Intergovernmental Panel on Climate Change (IPCC) 4th Assessment Reports. The models simulate the response of the global climate system to increasing greenhouse gas concentrations. The data in the Climate Data API have been aggregated to both the country and basin levels, as explained below. Note these data are modeled estimates of temperature and precipitation changes in different time periods under different GCMs and scenarios. They include changes for future time periods and also as “backcasting” (model representations of the past) set for past time periods. The latter should not be confused with any instrumental or observed data. There is a specific dataset with historical measured climate data as well.
@@ -80,13 +81,12 @@ get_model_precip() ## Get model precipitation data
 *Example 1: Plotting monthly data from different GCM's* 
 Say you want to compare temperature from two different models in the USA to see how they vary.  You can download data for the USA and then subset it to the specific models you're interested in and then plot them.
 
-```{r loadlib, echo=FALSE,warning=FALSE,message=FALSE,results='hide',cache=TRUE}
+```{r loadlib, echo=FALSE,warning=FALSE,message=FALSE,results='hide'}
 library(ggplot2)
 library(rWBclimate)
-library(reshape2)
 ```
 
-```{r getmodeldata,message=FALSE,cache=TRUE}
+```{r getmodeldata,message=FALSE}
 usa.dat <- get_model_temp("USA","mavg",2080,2100)
 usa.dat.bcc <- usa.dat[usa.dat$gcm == "bccr_bcm2_0", ]
 usa.dat.had <- usa.dat[usa.dat$gcm=="ukmo_hadcm3",]
@@ -99,16 +99,16 @@ ggplot(plot.df,aes(x=as.factor(month),y=data,group=ID,colour=gcm,linetype=scenar
 
 Subsetting all the data can be a bit tedious.  You could also compare all the models but just for one scenario, the A2.
 
-```{r plotallmodeldata,cache=TRUE}
+```{r plotallmodeldata}
 ggplot(usa.dat[usa.dat$scenario=="a2",],aes(x=month,y=data,group=gcm,colour=gcm))+geom_point()+geom_path()+ylab("Average temperature in degrees C \n between 2080 and 2100") + xlab("Month")+theme_bw()
 ```
 
 *Example 2: Plotting annual data for different countries*
 
 Data can be extracted from countries or basins submitted as vectors. Here we will plot the expected temperature anomaly for each 20 year period over a baseline control period of 1961-2000.  These countries chosen span the north to south pole.  It's clear from the plot that the northern most countries (US and Canada) have the biggest anomaly, and Belize, the most equatorial country, has the smallest anomaly.
-```{r annualdata,cache=TRUE}
+```{r annualdata}
 country.list <- c("CAN","USA","MEX","BLZ","COL","PER","BOL","ARG")
-country.dat <- get_model_temp(country.list,"annualanom",2020,2100)
+country.dat <- get_model_temp(country.list,"annualanom",2010,2100)
 #Subset data
 country.dat.bcc <- country.dat[country.dat$gcm == "bccr_bcm2_0", ]
 ##Exclude A2 scenario
@@ -125,7 +125,7 @@ Getting raw model data is really useful for comparing scenarios or different GCM
 
 Let's look at monthly precipitation predictions for Indonesia for the period of 2080-2100.  We'll create a plot of the precipitation expected in the future for the two different scenarios and plot them with different colours and dashed lines to indicate quantiles.
 
-```{r comparing quantiles,cache=TRUE}
+```{r comparing quantiles}
 idn.dat <- get_ensemble_precip("IDN","mavg",2080,2100)
 #Set line types
 ltype <- rep(1,dim(idn.dat)[1])
@@ -157,7 +157,7 @@ You can also download 13 different ensemble statistics about basins or countries
 |*ppt_means*|Average daily precipitation|mm|
 
 Similar to our previous example where we looked at temperature anomaly along a latitudinal gradient, we can examine more complex ensemble statistics.  Here we examine the average minimum daily temperature in Scavavadian countries.  Also given that only two time periods are available, there is no need to enter in a specific year range
-```{r enesmble data,cache=TRUE}
+```{r enesmble data}
 country.list <- c("ISL","FIN","NOR","SWE")
 country.dat <- get_ensemble_stats(country.list,"mavg","tmin_means")
 ####### Subset data
@@ -182,7 +182,7 @@ It is possible to extract historical data from GCM queries, but this is acutally
 You can download historical precipitation for Belize, Colombia, Peru and Bolivia.  
 
 
-```{r historicalmonth,cache=TRUE}
+```{r historicalmonth}
 country.list <- c("BLZ","COL","PER","BOL")
 country.dat <- get_historical_precip(country.list,"month")
 
@@ -193,7 +193,7 @@ ggplot(country.dat,aes(x=month,y=data,group=locator,colour=locator))+geom_point(
 *Example 2: Downloading annual data*
 
 Another use of historical data is to look at increases in temperature over time.
-```{r historicalyear, message=FALSE,warning=FALSE,cache=TRUE}
+```{r historicalyear, message=FALSE,warning=FALSE}
 country.list <- c("USA","MEX","CAN","BLZ")
 country.dat <- get_historical_temp(country.list,"year")
 
@@ -208,7 +208,7 @@ Data can be mapped in [ggplot2](http://docs.ggplot2.org/current/) by downloading
 *Example 1: Creating map dataframe and plotting*
 
 Creating map data frames is straightforward, simply provide a list of valid country codes to the function `create_map_df`
-```{r map_plot,fig.width=5.5, fig.height=7,warning=FALSE,message=FALSE,cache=TRUE}
+```{r map_plot,fig.width=5.5, fig.height=7,warning=FALSE,message=FALSE}
 #Set the kmlpath option
 options(kmlpath = "~/kmltemp")
 ##Here we use a list basins for Africa
@@ -220,7 +220,7 @@ ggplot(af_basin, aes(x=long, y=lat,group=group))+ geom_polygon() + theme_bw()
 
 In order to map climate data you need to have a single point of data for each spatial polygon(country or basin) in your map dataframe.  We've already created the Africa basin map dataframe, so now you need to get some data for each basin.  
 
-```{r data_to_map,cache=TRUE}
+```{r data_to_map}
 af_basin_dat <- get_ensemble_temp(Africa_basin,"annualanom",2080,2100)
 ##  Subset data to just one scenario, and one percentile
 af_basin_dat <- subset(af_basin_dat,af_basin_dat$scenario == "a2")
@@ -229,9 +229,28 @@ af_basin_dat <- subset(af_basin_dat,af_basin_dat$percentile == 50)
 
 Now that we have both the map dataframe and the data we can bind them together with the function `climate_map()`.  The function has two options, it can return a `ggplot2` map or it can return a dataframe that you can plot easily with `ggplot2`.  This is useful because it means that you could bind together multiple dataframes for bigger plots, or perhaps add new data yourself
 
-```{r climatemap,fig.width=5.5, fig.height=7,message=FALSE,cache=TRUE}
+```{r climatemap,fig.width=5.5, fig.height=7,message=FALSE}
 
-af_map <- climate_map(af_basin,af_basin_dat,return_map = TRUE)
+af_map <- climate_map(af_basin,af_basin_dat,return_map = T)
 af_map + scale_fill_continuous("Temperature \n anomaly",low="yellow",high = "red") + theme_bw()
+
+```
+
+
+*Example 3: Creating a temperature map of the world*
+
+```{r worldmap,fig.width=8, fig.height=6,warning=FALSE,message=FALSE}
+options(kmlpath = "~/kmltemp")
+### Combine all country vectors
+
+world <- c(NoAm_country,SoAm_country,Eur_country,Asia_country,Africa_country,Oceana_country)
+world_map_df <- create_map_df(world)
+world_dat <- get_ensemble_temp(world,"annualavg",2080,2100)
+  ##  Subset data to just one scenario, and one percentile
+world_dat <- subset(world_dat,world_dat$scenario == "a2")
+world_dat <- subset(world_dat,world_dat$percentile == 50)
+
+world_map <- climate_map(world_map_df,world_dat,return_map = T)
+world_map + scale_fill_continuous("Temperature \n at 2100",low="yellow",high = "red") + theme_bw()
 
 ```
