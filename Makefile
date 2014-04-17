@@ -1,10 +1,20 @@
-all: pandoc move 
+all: pandoc move rmd2md
 
-
-pandoc:
-	cd inst/stuff/;\
-pandoc -H margins.sty rWBclimate_vignette.md -o rWBclimate.pdf --highlight-style=tango;\
+vignettes: 
+		cd inst/vign;\
+		Rscript -e 'library(knitr); knit("rWBclimate.Rmd");'
 
 move:
-	cp inst/stuff/*.pdf ../doc;\
-  
+		cp inst/vign/rWBclimate.md vignettes;\
+		cp inst/vign/rWBclimate.pdf vignettes;\
+		cp inst/vign/rWBclimate.html vignettes;\
+
+pandoc:
+		cd inst/vign;\
+		pandoc -H margins.sty rWBclimate.md -o rWBclimate.pdf --highlight-style=tango;\
+		pandoc -H margins.sty rWBclimate.md -o rWBclimate.html --highlight-style=tango;\
+
+
+rmd2md:
+		cd vignettes;\
+		cp rWBclimate.md rWBclimate.Rmd;\
