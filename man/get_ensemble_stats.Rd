@@ -56,7 +56,8 @@ Average daily precipitation \tab mm }
  # subset to the 50th percentile and just until the year 2100
  ens_dat <- subset(ens_dat, ens_dat$percentile == 50)
  ens_dat <- subset(ens_dat,ens_dat$toYear == 2100)
- ggplot(ens_dat,aes(x = as.factor(month), y= monthVals, group=scenario, colour=scenario)) + geom_point() + geom_line()
+ ggplot(ens_dat,aes(x = as.factor(month), y= monthVals, group=scenario,
+ colour=scenario)) + geom_point() + geom_line()
 }
 }
 

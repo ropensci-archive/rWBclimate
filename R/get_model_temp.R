@@ -20,13 +20,15 @@
 #' temp_dat <- get_model_temp(c("2","231"),"annualavg",1900,3000)
 #' temp_dat <- subset(temp_dat,temp_dat$gcm=="ukmo_hadcm3")
 #' temp_dat <- subset(temp_dat,temp_dat$scenario!="b1")
-#' ggplot(temp_dat,aes(x=fromYear,y=data,group=locator,colour=locator))+geom_path()
+#' ggplot(temp_dat,aes(x=fromYear,y=data,group=locator,
+#' colour=locator))+geom_path()
 #' 
 #' ### Get data for 4 countries with monthly tempitation values
 #' temp_dat <- get_model_temp(c("USA","BRA","CAN","YEM"),"mavg",2020,2030)
 #' temp_dat <- subset(temp_dat,temp_dat$gcm=="ukmo_hadcm3")
 #' temp_dat <- subset(temp_dat,temp_dat$scenario!="b1")
-#' ggplot(temp_dat,aes(x=as.factor(month),y=data,group=locator,colour=locator))+geom_path()
+#' ggplot(temp_dat,aes(x=as.factor(month),y=data,group=locator,
+#' colour=locator))+geom_path()
 #'}
 #'@export
 

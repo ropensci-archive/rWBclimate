@@ -11,8 +11,9 @@ Title: rWBclimate
 Description: A package for accessing World Bank climate data
 LazyData: True
 VignetteBuilder: knitr
-Suggests: knitr
-Depends:
+Suggests:
+    knitr
+Imports:
     ggplot2,
     httr,
     plyr,

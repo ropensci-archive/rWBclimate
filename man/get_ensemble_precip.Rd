@@ -45,13 +45,15 @@ full details.
 precip_dat <- get_ensemble_precip(c("2","231"),"annualavg",1900,3000)
 precip_dat <- subset(precip_dat,precip_dat$scenario!="b1")
 precip_dat$uniqueGroup <- paste(precip_dat$percentile,precip_dat$locator,sep="-")
-ggplot(precip_dat,aes(x=fromYear,y=annualVal,group=uniqueGroup,colour=as.factor(locator),linetype=as.factor(percentile)))+geom_path()
+ggplot(precip_dat,aes(x=fromYear,y=annualVal,group=uniqueGroup,colour=as.factor(locator),
+linetype=as.factor(percentile)))+ geom_path()
 
 ### Get data for 2 countries with monthly precipitation values
 precip_dat <- get_ensemble_precip(c("USA","BRA"),"mavg",2020,2030)
 precip_dat <- subset(precip_dat,precip_dat$scenario!="b1")
 precip_dat$uniqueGroup <- paste(precip_dat$percentile,precip_dat$locator,sep="-")
-ggplot(precip_dat,aes(x=as.factor(month),y=monthVals,group=uniqueGroup,colour=locator))+geom_path()
+ggplot(precip_dat,aes(x=as.factor(month),y=monthVals,group=uniqueGroup,
+colour=locator))+geom_path()
 }
 }
 

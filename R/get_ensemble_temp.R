@@ -22,13 +22,15 @@
 #' temp_dat <- get_ensemble_temp(c("2","231"),"annualavg",1900,3000)
 #' temp_dat <- subset(temp_dat,temp_dat$scenario!="b1")
 #' temp_dat$uniqueGroup <- paste(temp_dat$percentile,temp_dat$locator,sep="-")
-#' ggplot(temp_dat,aes(x=fromYear,y=annualVal,group=uniqueGroup,colour=as.factor(locator),linetype=as.factor(percentile)))+geom_path()
+#' ggplot(temp_dat,aes(x=fromYear,y=annualVal,group=uniqueGroup,colour=as.factor(locator),
+#' linetype=as.factor(percentile)))+geom_path()
 #' 
 #' ### Get data for 2 countries with monthly precipitation values
 #' temp_dat <- get_ensemble_temp(c("USA","BRA"),"mavg",2020,2030)
 #' temp_dat <- subset(temp_dat,temp_dat$scenario!="b1")
 #' temp_dat$uniqueGroup <- paste(temp_dat$percentile,temp_dat$locator,sep="-")
-#' ggplot(temp_dat,aes(x=as.factor(month),y=monthVals,group=uniqueGroup,colour=locator))+geom_path()
+#' ggplot(temp_dat,aes(x=as.factor(month),y=monthVals,group=uniqueGroup,
+#' colour=locator))+geom_path()
 #'}
 #'@export
 
