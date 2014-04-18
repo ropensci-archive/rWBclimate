@@ -1,4 +1,4 @@
-all: pandoc move rmd2md
+all: move pandoc rmd2md reducepdf
 
 vignettes: 
 		cd inst/vign;\
@@ -6,11 +6,11 @@ vignettes:
 
 move:
 		cp inst/vign/rWBclimate.md vignettes;\
-		cp inst/vign/rWBclimate.pdf vignettes;\
-		cp inst/vign/rWBclimate.html vignettes;\
+		cp -r inst/vign/figure vignettes;\
+
 
 pandoc:
-		cd inst/vign;\
+		cd vignettes;\
 		pandoc -H margins.sty rWBclimate.md -o rWBclimate.pdf --highlight-style=tango;\
 		pandoc -H margins.sty rWBclimate.md -o rWBclimate.html --highlight-style=tango;\
 
@@ -18,3 +18,6 @@ pandoc:
 rmd2md:
 		cd vignettes;\
 		cp rWBclimate.md rWBclimate.Rmd;\
+
+reducepdf:
+		Rscript -e 'tools::compactPDF("vignettes/rWBclimate.pdf", gs_quality = "ebook")';\
