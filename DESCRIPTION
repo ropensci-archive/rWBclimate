@@ -7,8 +7,10 @@ License: MIT + file LICENSE
 URL: http://github.com/ropensci/rWBclimate
 BugReports: http://github.com/ropensci/rWBclimate/issues
 Type: Package
-Title: rWBclimate
-Description: A package for accessing World Bank climate data
+Title: A package for accessing World Bank climate data
+Description: This package will download model predictions from 15 different 
+global circulation models in 20 year intervals from the world bank.  Users can also
+access historical data, and create maps at 2 different spatial scales.
 LazyData: True
 VignetteBuilder: knitr
 Suggests:
