@@ -2,8 +2,9 @@
 ==========
 
 [![Build Status](https://api.travis-ci.org/ropensci/rWBclimate.png)](https://travis-ci.org/ropensci/rWBclimate)
+[![Build status](https://ci.appveyor.com/api/projects/status/28njj5uw980frlpu/branch/master)](https://ci.appveyor.com/project/sckott/rwbclimate/branch/master)
 
-Introduction 
+Introduction
 ========================================================
 rWBclimate is an R interface for the World Bank climate data used in the World Bank [climate knowledge portal](http://sdwebx.worldbank.org/climateportal/index.cfm).  
 
@@ -79,7 +80,7 @@ The model data can be downloaded with two main functions:
 get_model_temp()  ## Get model temperature data
 get_model_precip() ## Get model precipitation data
 ```
-*Example 1: Plotting monthly data from different GCM's* 
+*Example 1: Plotting monthly data from different GCM's*
 Say you want to compare temperature from two different models in the USA to see how they vary.  You can download data for the USA and then subset it to the specific models you're interested in and then plot them.
 
 
@@ -94,24 +95,24 @@ usa.dat.had <- usa.dat[usa.dat$gcm == "ukmo_hadcm3", ]
 usa.dat.bcc$ID <- paste(usa.dat.bcc$scenario, usa.dat.bcc$gcm, sep = "-")
 usa.dat.had$ID <- paste(usa.dat.had$scenario, usa.dat.had$gcm, sep = "-")
 plot.df <- rbind(usa.dat.bcc, usa.dat.had)
-ggplot(plot.df, aes(x = as.factor(month), y = data, group = ID, colour = gcm, 
-    linetype = scenario)) + geom_point() + geom_path() + ylab("Average temperature in degrees C \n between 2080 and 2100") + 
+ggplot(plot.df, aes(x = as.factor(month), y = data, group = ID, colour = gcm,
+    linetype = scenario)) + geom_point() + geom_path() + ylab("Average temperature in degrees C \n between 2080 and 2100") +
     xlab("Month") + theme_bw()
 ```
 
-![plot of chunk getmodeldata](figure/getmodeldata.png) 
+![plot of chunk getmodeldata](figure/getmodeldata.png)
 
 
 Subsetting all the data can be a bit tedious.  You could also compare all the models but just for one scenario, the A2.
 
 
 ```r
-ggplot(usa.dat[usa.dat$scenario == "a2", ], aes(x = month, y = data, group = gcm, 
-    colour = gcm)) + geom_point() + geom_path() + ylab("Average temperature in degrees C \n between 2080 and 2100") + 
+ggplot(usa.dat[usa.dat$scenario == "a2", ], aes(x = month, y = data, group = gcm,
+    colour = gcm)) + geom_point() + geom_path() + ylab("Average temperature in degrees C \n between 2080 and 2100") +
     xlab("Month") + theme_bw()
 ```
 
-![plot of chunk plotallmodeldata](figure/plotallmodeldata.png) 
+![plot of chunk plotallmodeldata](figure/plotallmodeldata.png)
 
 
 *Example 2: Plotting annual data for different countries*
@@ -125,12 +126,12 @@ country.dat <- get_model_temp(country.list, "annualanom", 2010, 2100)
 country.dat.bcc <- country.dat[country.dat$gcm == "bccr_bcm2_0", ]
 ## Exclude A2 scenario
 country.dat.bcc <- subset(country.dat.bcc, country.dat.bcc$scenario != "a2")
-ggplot(country.dat.bcc, aes(x = fromYear, y = data, group = locator, colour = locator)) + 
-    geom_point() + geom_path() + ylab("Temperature anomaly over baseline") + 
+ggplot(country.dat.bcc, aes(x = fromYear, y = data, group = locator, colour = locator)) +
+    geom_point() + geom_path() + ylab("Temperature anomaly over baseline") +
     theme_bw()
 ```
 
-![plot of chunk annualdata](figure/annualdata.png) 
+![plot of chunk annualdata](figure/annualdata.png)
 
 
 
@@ -151,12 +152,12 @@ ltype[idn.dat$percentile != 50] <- 2
 idn.dat$ltype <- ltype
 # Create uniqueIDs
 idn.dat$uid <- paste(idn.dat$scenario, idn.dat$percentile, sep = "-")
-ggplot(idn.dat, aes(x = as.factor(month), y = data, group = uid, colour = scenario, 
-    linetype = as.factor(ltype))) + geom_point() + geom_path() + xlab("Month") + 
+ggplot(idn.dat, aes(x = as.factor(month), y = data, group = uid, colour = scenario,
+    linetype = as.factor(ltype))) + geom_point() + geom_path() + xlab("Month") +
     ylab("Rain in mm") + theme_bw()
 ```
 
-![plot of chunk comparing quantiles](figure/comparing_quantiles.png) 
+![plot of chunk comparing quantiles](figure/comparing_quantiles.png)
 
 
 *Example 2: Ensemble statistics*
@@ -192,12 +193,12 @@ country.dat.b1 <- subset(country.dat.b1, country.dat.b1$percentile == 50)
 country.dat.b1 <- subset(country.dat.b1, country.dat.b1$fromYear == 2081)
 
 
-ggplot(country.dat.b1, aes(x = month, y = data, group = locator, colour = locator)) + 
-    geom_point() + geom_path() + ylab("Average daily minimum temperature") + 
+ggplot(country.dat.b1, aes(x = month, y = data, group = locator, colour = locator)) +
+    geom_point() + geom_path() + ylab("Average daily minimum temperature") +
     theme_bw() + xlab("Month")
 ```
 
-![plot of chunk enesmble data](figure/enesmble_data.png) 
+![plot of chunk enesmble data](figure/enesmble_data.png)
 
 
 
@@ -215,12 +216,12 @@ You can download historical precipitation for Belize, Colombia, Peru and Bolivia
 country.list <- c("BLZ", "COL", "PER", "BOL")
 country.dat <- get_historical_precip(country.list, "month")
 
-ggplot(country.dat, aes(x = month, y = data, group = locator, colour = locator)) + 
-    geom_point() + geom_path() + ylab("Average historical precipitation (mm)") + 
+ggplot(country.dat, aes(x = month, y = data, group = locator, colour = locator)) +
+    geom_point() + geom_path() + ylab("Average historical precipitation (mm)") +
     theme_bw() + xlab("Month")
 ```
 
-![plot of chunk historicalmonth](figure/historicalmonth.png) 
+![plot of chunk historicalmonth](figure/historicalmonth.png)
 
 
 *Example 2: Downloading annual data*
@@ -231,13 +232,13 @@ Another use of historical data is to look at increases in temperature over time.
 country.list <- c("USA", "MEX", "CAN", "BLZ")
 country.dat <- get_historical_temp(country.list, "year")
 
-ggplot(country.dat, aes(x = year, y = data, group = locator)) + geom_point() + 
-    geom_path() + ylab("Average annual temperature of Canada") + theme_bw() + 
-    xlab("Year") + stat_smooth(se = F, colour = "black") + facet_wrap(~locator, 
+ggplot(country.dat, aes(x = year, y = data, group = locator)) + geom_point() +
+    geom_path() + ylab("Average annual temperature of Canada") + theme_bw() +
+    xlab("Year") + stat_smooth(se = F, colour = "black") + facet_wrap(~locator,
     scale = "free")
 ```
 
-![plot of chunk historicalyear](figure/historicalyear.png) 
+![plot of chunk historicalyear](figure/historicalyear.png)
 
 
 **_Mapping climate Data_**
@@ -259,7 +260,7 @@ af_basin <- create_map_df(Africa_basin)
 ggplot(af_basin, aes(x = long, y = lat, group = group)) + geom_polygon() + theme_bw()
 ```
 
-![plot of chunk map_plot](figure/map_plot.png) 
+![plot of chunk map_plot](figure/map_plot.png)
 
 
 *Example 2: Mapping climate data*
@@ -281,11 +282,11 @@ Now that we have both the map dataframe and the data we can bind them together w
 ```r
 
 af_map <- climate_map(af_basin, af_basin_dat, return_map = T)
-af_map + scale_fill_continuous("Temperature \n anomaly", low = "yellow", high = "red") + 
+af_map + scale_fill_continuous("Temperature \n anomaly", low = "yellow", high = "red") +
     theme_bw()
 ```
 
-![plot of chunk climatemap](figure/climatemap.png) 
+![plot of chunk climatemap](figure/climatemap.png)
 
 
 
@@ -296,7 +297,7 @@ af_map + scale_fill_continuous("Temperature \n anomaly", low = "yellow", high = 
 options(kmlpath = "~/kmltemp")
 ### Combine all country vectors
 
-world <- c(NoAm_country, SoAm_country, Eur_country, Asia_country, Africa_country, 
+world <- c(NoAm_country, SoAm_country, Eur_country, Asia_country, Africa_country,
     Oceana_country)
 world_map_df <- create_map_df(world)
 ```
@@ -308,11 +309,11 @@ world_dat <- subset(world_dat, world_dat$scenario == "a2")
 world_dat <- subset(world_dat, world_dat$percentile == 50)
 
 world_map <- climate_map(world_map_df, world_dat, return_map = T)
-world_map + scale_fill_continuous("Temperature \n at 2100", low = "yellow", 
+world_map + scale_fill_continuous("Temperature \n at 2100", low = "yellow",
     high = "red") + theme_bw()
 ```
 
-![plot of chunk worldmap](figure/worldmap.png) 
+![plot of chunk worldmap](figure/worldmap.png)
 
 
 To cite package ‘rWBclimate’ in publications use:
@@ -334,5 +335,3 @@ A BibTeX entry for LaTeX users is
 
 
 [![](http://ropensci.org/public_images/github_footer.png)](http://ropensci.org)
-
-
