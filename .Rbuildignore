@@ -2,3 +2,4 @@ Makefile
 .travis.yml
 .gitignore
 README.Rmd
+^appveyor\.yml$

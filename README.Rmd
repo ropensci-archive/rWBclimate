@@ -2,10 +2,11 @@
 ==========
 
 [![Build Status](https://api.travis-ci.org/ropensci/rWBclimate.png)](https://travis-ci.org/ropensci/rWBclimate)
+[![Build status](https://ci.appveyor.com/api/projects/status/28njj5uw980frlpu/branch/master)](https://ci.appveyor.com/project/sckott/rwbclimate/branch/master)
 
-Introduction 
+Introduction
 ========================================================
-rWBclimate is an R interface for the World Bank climate data used in the World Bank [climate knowledge portal](http://sdwebx.worldbank.org/climateportal/index.cfm).  
+rWBclimate is an R interface for the World Bank climate data used in the World Bank [climate knowledge portal](http://sdwebx.worldbank.org/climateportal/index.cfm).
 
 Installation
 ------
@@ -79,7 +80,7 @@ The model data can be downloaded with two main functions:
 get_model_temp()  ## Get model temperature data
 get_model_precip() ## Get model precipitation data
 ```
-*Example 1: Plotting monthly data from different GCM's* 
+*Example 1: Plotting monthly data from different GCM's*
 Say you want to compare temperature from two different models in the USA to see how they vary.  You can download data for the USA and then subset it to the specific models you're interested in and then plot them.
 
 ```{r loadlib, echo=FALSE,warning=FALSE,message=FALSE,results='hide'}
@@ -130,7 +131,7 @@ Let's look at monthly precipitation predictions for Indonesia for the period of 
 idn.dat <- get_ensemble_precip("IDN","mavg",2080,2100)
 #Set line types
 ltype <- rep(1,dim(idn.dat)[1])
-ltype[idn.dat$percentile != 50] <- 2 
+ltype[idn.dat$percentile != 50] <- 2
 idn.dat$ltype <- ltype
 #Create uniqueIDs
 idn.dat$uid <- paste(idn.dat$scenario,idn.dat$percentile,sep="-")
@@ -180,7 +181,7 @@ It is possible to extract historical data from GCM queries, but this is acutally
 
 *Example 1: Downloading monthly data*
 
-You can download historical precipitation for Belize, Colombia, Peru and Bolivia.  
+You can download historical precipitation for Belize, Colombia, Peru and Bolivia.
 
 
 ```{r historicalmonth}
@@ -219,7 +220,7 @@ ggplot(af_basin, aes(x=long, y=lat,group=group))+ geom_polygon() + theme_bw()
 
 *Example 2: Mapping climate data*
 
-In order to map climate data you need to have a single point of data for each spatial polygon(country or basin) in your map dataframe.  We've already created the Africa basin map dataframe, so now you need to get some data for each basin.  
+In order to map climate data you need to have a single point of data for each spatial polygon(country or basin) in your map dataframe.  We've already created the Africa basin map dataframe, so now you need to get some data for each basin.
 
 ```{r data_to_map}
 af_basin_dat <- get_ensemble_temp(Africa_basin,"annualanom",2080,2100)
@@ -275,5 +276,3 @@ A BibTeX entry for LaTeX users is
 
 
 [![](http://ropensci.org/public_images/github_footer.png)](http://ropensci.org)
-
-
