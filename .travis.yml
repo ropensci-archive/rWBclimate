@@ -8,7 +8,6 @@ before_script:
   libgdal1h
 - "./travis-tool.sh bootstrap"
 - "./travis-tool.sh install_deps"
-- "./travis-tool.sh github_package assertthat"
 notifications:
   slack:
     secure: WgykrmBXhE6Pcqrs3FcU8Uvuil0dxxfxfuQRGfUPS9Ho+/EbPoRClzXZ6pprDLn7oMWkiz29J/TeTQMgndqCfHGbouasIYHQcuBVaZo9oW3L4g3Ea5r/PA7zsCeJOGwsI5oex8gwHfxSat1J47J0POixVRfYjTwaosEBadG8QiA=
