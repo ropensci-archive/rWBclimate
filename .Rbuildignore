@@ -3,3 +3,5 @@ Makefile
 .gitignore
 README.Rmd
 ^appveyor\.yml$
+^.*\.Rproj$
+^\.Rproj\.user$

@@ -7,16 +7,16 @@
 #'@return Either a ggplot2 map or a dataframe depending on the parameter return_map
 #'@examples \dontrun{
 #' #Set the kmlpath option
-#' options(kmlpath = "/Users/edmundhart/kmltemp")
+#' options(kmlpath = "~/kmltemp2")
 #' ##Here we use a list basins for Africa
 #' af_basin <- create_map_df(Africa_basin)
 #' af_basin_dat <- get_ensemble_temp(Africa_basin,"annualanom",2080,2100)
 #' ##  Subset data to just one scenario, and one percentile
 #' af_basin_dat <- subset(af_basin_dat,af_basin_dat$scenario == "a2")
 #' af_basin_dat <- subset(af_basin_dat,af_basin_dat$percentile == 50)
-#' af_map <- climate_map(af_basin,af_basin_dat,return_map = T)
+#' af_map <- climate_map(map_df = af_basin, data_df = af_basin_dat, return_map = TRUE)
 #' af_map + scale_fill_continuous("Temperature \n anomaly",low="yellow",high = "red") + theme_bw()
-#'  
+#'
 #'}
 #'
 #'@export
@@ -30,19 +30,28 @@ climate_map <- function(map_df, data_df, return_map = TRUE){
   ## Order data for easy matching
   data_df <- data_df[order(data_df$locator),]
   map_df <- map_df[order(map_df$ID),]
-  
+
   ids <- unique(map_df$ID)
   data_vec <- vector()
   for(i in 1:length(ids)){
     data_vec <- c(data_vec,rep(data_df$data[i],sum(map_df$ID==ids[i])))
   }
-  
+
   if(is.list(data_vec)){
     data_vec <- unlist(data_vec)
   }
-  
+
   map_df$data <- data_vec
-  map <- ggplot(map_df, aes(x=long, y=lat,group=group,fill=data))+ geom_polygon()
-  if(return_map == TRUE){return(map)
-  } else {return(map_df)}
+  if(length(unique(map_df$data)) == 1) {
+    map <- ggplot(map_df, aes(x = long, y = lat, group = group)) +
+      geom_polygon()
+  } else {
+    map <- ggplot(map_df, aes(x = long, y = lat, group = group, fill = data)) +
+      geom_polygon()
+  }
+  if (return_map) {
+    return(map)
+  } else {
+    return(map_df)
+  }
 }
