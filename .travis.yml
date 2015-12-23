@@ -1,13 +1,29 @@
 language: c
-script: "./travis-tool.sh run_tests"
+sudo: required
+dist: trusty
+script: ./travis-tool.sh run_tests
+
 before_script:
-- curl -OL http://raw.github.com/craigcitro/r-travis/master/scripts/travis-tool.sh
-- chmod 755 ./travis-tool.sh
-- sudo apt-get update -qq
-- sudo apt-get install -y gdal-bin libgdal-dev libgdal1-dev netcdf-bin libproj-dev
-  libgdal1h
-- "./travis-tool.sh bootstrap"
-- "./travis-tool.sh install_deps"
+  - sudo apt-get --yes --force-yes update -qq
+  - sudo apt-get install -y gdal-bin libgdal-dev libgdal1-dev netcdf-bin libproj-dev
+  - curl -OL http://raw.github.com/craigcitro/r-travis/master/scripts/travis-tool.sh
+  - chmod 755 ./travis-tool.sh
+  - ./travis-tool.sh bootstrap
+  - ./travis-tool.sh install_deps
+
+after_failure:
+  - ./travis-tool.sh dump_logs
+
+after_success:
+- Rscript -e 'covr::codecov()'
+
+env:
+   global:
+     - R_LIBS="http://cran.rstudio.com"
+     - R_BUILD_ARGS="--no-build-vignettes --no-manual"
+     - R_CHECK_ARGS="--no-build-vignettes --no-manual --as-cran"
+     - BOOTSTRAP_LATEX=""
+
 notifications:
   slack:
     secure: WgykrmBXhE6Pcqrs3FcU8Uvuil0dxxfxfuQRGfUPS9Ho+/EbPoRClzXZ6pprDLn7oMWkiz29J/TeTQMgndqCfHGbouasIYHQcuBVaZo9oW3L4g3Ea5r/PA7zsCeJOGwsI5oex8gwHfxSat1J47J0POixVRfYjTwaosEBadG8QiA=
