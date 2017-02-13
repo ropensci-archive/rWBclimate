@@ -3,6 +3,7 @@
 
 [![Build Status](https://api.travis-ci.org/ropensci/rWBclimate.png)](https://travis-ci.org/ropensci/rWBclimate)
 [![Build status](https://ci.appveyor.com/api/projects/status/28njj5uw980frlpu/branch/master)](https://ci.appveyor.com/project/sckott/rwbclimate/branch/master)
+[![codecov.io](https://codecov.io/github/ropensci/rWBclimate/coverage.svg?branch=master)](https://codecov.io/github/ropensci/rWBclimate?branch=master)
 
 Introduction
 ========================================================
