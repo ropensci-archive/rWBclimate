@@ -36,7 +36,7 @@ get_climate_data <- function(locator,geo_type,type, cvar, start, end){
   full_url <- paste(base_url,data_url,extension,sep="")
   res <- GET(full_url)
   stop_for_status(res)
-  raw_data <- try(content(GET(full_url),as="text"),silent=TRUE)
+  raw_data <- try(content(res, as = "text"), silent = TRUE)
   if(sum(grep("unexpected",raw_data)) > 0){
     stop(paste("You entered a country for which there is no data. ",locator," is not a country with any data"))
   }
