@@ -1,8 +1,7 @@
 Package: rWBclimate
 Authors@R: c(person("Edmund", "Hart", role = c("aut", "cre"),
     email = "edmund.m.hart@gmail.com"))
-Version: 0.1.4.99
-Date: 2015-03-30
+Version: 0.1.5.91
 License: MIT + file LICENSE
 URL: http://github.com/ropensci/rWBclimate
 BugReports: http://github.com/ropensci/rWBclimate/issues
