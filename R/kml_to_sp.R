@@ -18,7 +18,9 @@
 #'}
 #'@export
 
-kml_to_sp <- function(map_df, df = NULL, crs_string = "+proj=longlat +datum=WGS84"){
+kml_to_sp <- function(map_df, 
+                      df = NULL, 
+                      crs_string = "+proj=longlat +datum=WGS84"){
   
   
   
