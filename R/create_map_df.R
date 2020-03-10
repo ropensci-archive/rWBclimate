@@ -29,6 +29,7 @@ create_map_df <- function(locator) {
   
   df_out <- list()
     map_pb <- txtProgressBar(min = 0, max = length(locator), style = 3)
+    
   for(i in 1:length(locator)) {
     fName <- paste(my_path,to_plot[i], ".kml", sep = "")
     fSize <- file.info(fName)$size

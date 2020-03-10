@@ -17,13 +17,23 @@
 
 
 
-get_data_recursive <- function(locator,geo_type,type, cvar, start, end){
+get_data_recursive <- function(locator,
+                               geo_type,
+                               type, 
+                               cvar, 
+                               start, 
+                               end){
   dates <- date_correct(start,end)
   data_out <- list()
   counter <- 1
   for(i in 1:length(locator)){
     for(j in 1:length(dates[,1])){
-      data_out[[counter]] <- get_climate_data(locator[i],geo_type,type,cvar,dates[j,1],dates[j,2])
+      data_out[[counter]] <- get_climate_data(locator[i],
+                                              geo_type,
+                                              type,
+                                              cvar,
+                                              dates[j,1],
+                                              dates[j,2])
       counter <- counter + 1
     }
   }

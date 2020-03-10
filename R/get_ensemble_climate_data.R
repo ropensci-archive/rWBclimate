@@ -16,9 +16,14 @@
 #' conform to dates, the fuction will automatically round them.
 #' @param end The ending year you want data for, can be in the past or the future.
 #' Similar to the start date, dates will be rounded to the nearest end dat.
-get_ensemble_climate_data <- function(locator, geo_type, type, cvar, start, end){
-  base_url <- "http://api.worldbank.org/climateweb/rest/v1/"
-
+get_ensemble_climate_data <- function(locator, 
+                                      geo_type, 
+                                      type, 
+                                      cvar, 
+                                      start, 
+                                      end){
+  base_url <- "http://climatedataapi.worldbank.org/climateweb/rest/v1/"
+  
   ### Error handling
   if(geo_type == "country"){
     check_ISO_code(locator)

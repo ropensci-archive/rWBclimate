@@ -21,7 +21,9 @@
 #'
 #'@export
 
-climate_map <- function(map_df, data_df, return_map = TRUE){
+climate_map <- function(map_df, 
+                        data_df, 
+                        return_map = TRUE){
   ### You can't plot more that one piece of data on a map
   ### so we need to check that there's not more data than regions to plot
   if(length(unique(map_df$ID)) != dim(data_df)[1]){

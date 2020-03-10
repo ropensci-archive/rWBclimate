@@ -86,6 +86,8 @@ Say you want to compare temperature from two different models in the USA to see 
 
 
 ```r
+library(rWBclimate)
+library(ggplot2)
 usa.dat <- get_model_temp("USA", "mavg", 2080, 2100)
 usa.dat.bcc <- usa.dat[usa.dat$gcm == "bccr_bcm2_0", ]
 usa.dat.had <- usa.dat[usa.dat$gcm == "ukmo_hadcm3", ]
@@ -98,7 +100,7 @@ ggplot(plot.df, aes(x = as.factor(month), y = data, group = ID, colour = gcm,
     xlab("Month") + theme_bw()
 ```
 
-![plot of chunk getmodeldata](figure/getmodeldata.png) 
+![plot of chunk getmodeldata](figure/getmodeldata.png)
 
 
 Subsetting all the data can be a bit tedious.  You could also compare all the models but just for one scenario, the A2.

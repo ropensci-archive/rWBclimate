@@ -21,3 +21,4 @@ Imports:
     jsonlite,
     reshape2,
     sp
+RoxygenNote: 7.0.2

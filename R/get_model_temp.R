@@ -32,7 +32,10 @@
 #'}
 #'@export
 
-get_model_temp <- function(locator,type, start, end){
+get_model_temp <- function(locator,
+                           type, 
+                           start, 
+                           end){
   ### check type is valid
   typevec <- c("mavg","annualavg","manom","annualanom")
   if(!type%in%typevec){
