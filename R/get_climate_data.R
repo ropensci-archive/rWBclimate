@@ -40,7 +40,7 @@ get_climate_data <- function(locator,geo_type,type, cvar, start, end){
   
 #  print(full_url)
 
-    res <- GET(full_url)
+    res <- RETRY("GET", full_url, terminate_on = c(404))
   stop_for_status(res)
   raw_data <- try(content(res, as = "text"), silent = TRUE)
   if(sum(grep("unexpected",raw_data)) > 0){

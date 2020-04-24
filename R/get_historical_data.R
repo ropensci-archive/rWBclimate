@@ -46,7 +46,7 @@ if(geo_type == "basin"){
 data_url <- paste(geo_type,"cru",cvar,time_scale,locator,sep="/")
 extension <- ".json"
 full_url <- paste(base_url,data_url,extension,sep="")
-raw_data <- try(content(GET(full_url),as="text"),silent=T)
+raw_data <- try(content(RETRY("GET", full_url, terminate_on = c(404)),as="text"),silent=T)
 
 if(sum(grep("unexpected",raw_data)) > 0){
   stop(paste("You entered a country for which there is no data. ",locator," is not a country with any data"))

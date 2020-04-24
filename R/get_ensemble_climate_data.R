@@ -41,7 +41,7 @@ get_ensemble_climate_data <- function(locator,
   data_url <- paste(geo_type, type, "ensemble", cvar, start, end, locator, sep="/")
   extension <- ".json"
   full_url <- paste(base_url, data_url, extension, sep="")
-  raw_data <- try(content(GET(full_url), as="text"), silent=TRUE)
+  raw_data <- try(content(RETRY("GET", full_url, terminate_on = c(404)), as="text"), silent=TRUE)
   data_out <- jsonlite::fromJSON(raw_data)
 #   json <- jsonlite::fromJSON(raw_data, FALSE)
 #   data_out <- plyr::rbind.fill(lapply(json, function(z) {

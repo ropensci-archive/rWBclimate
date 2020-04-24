@@ -32,7 +32,7 @@ download_kml <- function(locator) {
   
    for(i in 1:length(to_download)) {
       full_url <- paste(base_url, geo_ref, "kml", to_download[i], sep="/")
-      temp_file <- content(GET(url = full_url), as = "text")
+      temp_file <- content(RETRY(verb = "GET", url = full_url, terminate_on = c(404)), as = "text")
       ###Write file
       to_write<- file(paste(my_path,to_download[i], ".kml", sep=""), open = "w")
       writeLines(temp_file,to_write)
